@@ -4,51 +4,34 @@
 var minWidth = 800;
 if ($(window).width() >= minWidth) {
 $(function() {
-			$("html, body").mousewheel(function(event, delta) {
-				this.scrollLeft -= (delta * 0.6);
-				event.preventDefault();
-			});
-		});
-
-
- 
+	$("html, body").mousewheel(function(event, delta) {
+		this.scrollLeft -= (delta * 0.6);
+		event.preventDefault();
+	});
+});
 
 
 // WHO WE ARE 
 
 $(function() {
 
-
 $("#paulDetail").click(function() {
 $("#paulInfo").fadeIn();
 });
-// $("#paulClose").click(function() {
-// $("#paulInfo").fadeOut();
-// });
 
 $("#jerryDetail").click(function() {
 $("#jerryInfo").fadeIn();
 });
-// $("#jerryClose").click(function() {
-// $("#jerryInfo").fadeOut();
-// });
 
 $("#janDetail").click(function() {
 $("#janInfo").fadeIn();
 });
-// $("#janClose").click(function() {
-// $("#janInfo").fadeOut();
-// });
 
 $("#keithDetail").click(function() {
 $("#keithInfo").fadeIn();
 });
-// $("#keithClose").click(function() {
-// $("#keithInfo").fadeOut();
-// });
 
-
-$(".info").click(function() {
+$(".overlay").click(function() {
 $("#paulInfo, #jerryInfo, #janInfo, #keithInfo").fadeOut();
 });
 
@@ -119,7 +102,7 @@ var parallaxScroll = {
 				} else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40
-					}, 600, 'easeOutQuad', function() {
+					}, 600, 'easeInOutSine', function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1400));
 						}, 600);
@@ -168,19 +151,9 @@ function getCurrentScroll() {
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 jQuery.extend( jQuery.easing,
 {
-	def: 'easeOutQuad',
-	swing: function (x, t, b, c, d) {
-		//alert(jQuery.easing.default);
-		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
-	},
-	easeInQuad: function (x, t, b, c, d) {
-		return c*(t/=d)*t + b;
-	},
-	easeOutQuad: function (x, t, b, c, d) {
-		return -c *(t/=d)*(t-2) + b;
-	},
-	easeInOutQuad: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t + b;
-		return -c/2 * ((--t)*(t-2) - 1) + b;
-	}
+	def: 'easeInOutSine',
+    easeInOutSine: function(x, t, b, c, d) {
+        return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+    }
+
 });
