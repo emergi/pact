@@ -1,3 +1,15 @@
+@font-face {font-family: 'ImpactWGL';src: url('fonts/2F56FC_0_0.eot');src: url('fonts/2F56FC_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2F56FC_0_0.woff2') format('woff2'),url('fonts/2F56FC_0_0.woff') format('woff'),url('fonts/2F56FC_0_0.ttf') format('truetype'),url('fonts/2F56FC_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'AvenirLTStd-Heavy';src: url('fonts/2F56FC_1_0.eot');src: url('fonts/2F56FC_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/2F56FC_1_0.woff2') format('woff2'),url('fonts/2F56FC_1_0.woff') format('woff'),url('fonts/2F56FC_1_0.ttf') format('truetype'),url('fonts/2F56FC_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'AvenirLTStd-Book';src: url('fonts/2F56FC_2_0.eot');src: url('fonts/2F56FC_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/2F56FC_2_0.woff2') format('woff2'),url('fonts/2F56FC_2_0.woff') format('woff'),url('fonts/2F56FC_2_0.ttf') format('truetype'),url('fonts/2F56FC_2_0.svg#wf') format('svg');}
+
+
+
+
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 margin:0;
 padding:0;
@@ -278,7 +290,28 @@ height: 255px;
 
 
 
+
+
+
+
+
+
+
+
+
 /*          MOBILE        */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -287,7 +320,6 @@ height: 255px;
 @media (max-width: 800px) {
 
 html {
-font-size: 16px;
 max-width: 800px;
 }
 
@@ -295,6 +327,74 @@ max-width: 800px;
 body {
 
 }
+
+#mobile {
+margin-left: 10vw;
+margin-right: 10vw;
+}
+
+
+
+article {
+width: 100%;
+}
+
+
+picture {
+margin-top: 5rem;
+margin-bottom: 15rem;
+display: block;
+text-align: center;
+}
+
+
+header, strong, p {
+text-align: center;
+display: block;
+margin-bottom: 2rem;
+}
+
+
+
+header {
+font-family: ImpactWGL;
+font-size: 2.5rem;
+}
+
+
+
+strong {
+font-family: AvenirLTStd-Heavy;
+font-size: 1rem;
+}
+
+
+p {
+font-family: AvenirLTStd-Book;
+font-size: 0.8rem;
+}
+
+
+.mobile-contact-buttons {
+width: 100%;
+text-align:center;
+margin-bottom: 20rem;
+
+margin-left: 26vw;
+
+
+}
+
+
+
+
+a .iconsContact{
+    padding-right: 2vw;
+    width: 8vw;
+    
+}
+
+
 
 
 .home .main {
@@ -315,7 +415,7 @@ display: block;
 
 }
 
-header {
+/*header {
     
   width: 100%;
   padding-bottom:2rem;
@@ -330,7 +430,7 @@ header {
     text-align:center;
   top: 0;
   position: fixed;
-}
+}*/
 
 
 header img {

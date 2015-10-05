@@ -35,9 +35,6 @@ $(".overlay").click(function() {
 $("#paulInfo, #jerryInfo, #janInfo, #keithInfo").fadeOut();
 });
 
-
-
-
 });
 
 
@@ -126,23 +123,23 @@ else {
 
 // MOBILE SITE
 
-$(function(){
- var shrinkHeader = 300;
-  $(window).scroll(function() {
-    var scroll = getCurrentScroll();
-      if ( scroll >= shrinkHeader ) {
-           $('header').addClass('shrink');
+// $(function(){
+//  var shrinkHeader = 300;
+//   $(window).scroll(function() {
+//     var scroll = getCurrentScroll();
+//       if ( scroll >= shrinkHeader ) {
+//            $('.sticky-header').addClass('shrink');
            
-        }
-        else {
+//         }
+//         else {
         	
-            $('header').removeClass('shrink');
-        }
-  });
-function getCurrentScroll() {
-    return window.pageYOffset || document.documentElement.scrollTop;
-    }
-});
+//             $('.sticky-header').removeClass('shrink');
+//         }
+//   });
+// function getCurrentScroll() {
+//     return window.pageYOffset || document.documentElement.scrollTop;
+//     }
+// });
 };
 
 

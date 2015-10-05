@@ -53,7 +53,7 @@
 <img class="bgimgs logo" src="img/logo1.png"
 data-stellar-ratio="0.8"
 sizes="80vw"
-srcset="../img/logo1.png 800w,
+srcset="img/logo1.png 800w,
 img/logo1.png 960w,
 img/logo1.png 1080w,
 img/logo1.png 1280w,
@@ -63,7 +63,7 @@ img/logo1.png 2000w">
 <img class="bgimgs logo" src="img/logo2.png"
 data-stellar-ratio="1.2"
 sizes="80vw"
-srcset="./images/png/logo2.png 800w,
+srcset="img/logo2.png 800w,
 img/logo2.png 960w,
 img/logo2.png 1080w,
 img/logo2.png 1280w,
@@ -389,28 +389,60 @@ srcset="img/800/philosophy-800-2.png 800w,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--        MOBILE SITE        -->
 
 
 
-<div id="mobile">
 
-<section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="mobile">
 <picture><img type="image/svg+xml" src="img/logoMobile.svg" alt="Pact logo"/>
 </picture>
 
-<main>
+<article id="what-is-pact" class="mobile-article">
 
-<article class="textContainer">
+<header class="sticky-header">WHAT IS PACT</header>
 
-<header id="what-is-pact" class="sticky-header">WHAT IS PACT</header>
+<strong class="what">EXECUTIVE SEARCH AND LEADERSHIP CONSULTINGWITH A DIGITAL ENGINE</strong>
 
-<strong style="padding-bottom:1.5rem;">EXECUTIVE SEARCH AND LEADERSHIP CONSULTINGWITH A DIGITAL ENGINE</strong>
-
-<strong style="padding-bottom:1.5rem;">WE ARE</strong>
+<strong class="what">WE ARE</strong>
 <p class="paragraph">a multi-disciplinary team of expert partners that delivers leadership talent solutions for today’s business.challenges.</p>
 
-<strong style="padding-bottom:1.5rem;">WE WORK</strong>
+<strong class="what">WE WORK</strong>
 <p class="paragraph">with talent powered organisations across the corporate landscape and creative industries.</p>
 
 <strong style="padding-bottom:1.5rem;">WE ARE PROVEN</strong>
@@ -419,11 +451,13 @@ srcset="img/800/philosophy-800-2.png 800w,
 </article>
 
 
+
+
 <article class="textContainer">
 
 <header id="what-we-do" class="sticky-header">WHAT WE DO</header>
 
-<strong style="padding-bottom:1.5rem;">CREATING
+<strong class="what">CREATING
 NON-EXECUTIVE/ADVISORY
 TEAMS</strong>
 <p class="paragraph">we help organisations achieve their growth objectives by identifying
@@ -438,12 +472,26 @@ advisory talent.</p>
 </article>
 
 
+
+
+
+
 <article class="textContainer">
 
 <header id="who-we-are" class="sticky-header">WHO WE ARE</header>
 
 <div class="sticky-profile">
-<picture class="mobile-profile-picture"><img src="" alt="Paul Angeli"></picture>
+
+
+
+<picture class="mobile-profile-picture">
+<img src="img/profiles/paul-profile-600.jpg" media="(min-width: 600px)"
+alt="Paul Angeli"
+srcset="img/profiles/paul-profile-600.jpg 600w,
+        img/profiles/paul-profile-800.jpg 800w">
+</picture>
+
+
 
 <strong style="padding-bottom:1.5rem;">PAUL ANGELI</strong>
 </div>
@@ -478,7 +526,12 @@ advisory talent.</p>
 
 
 <div class="sticky-profile">
-<picture class="mobile-profile-picture"><img src="" alt="Jan Sullivan"></picture>
+<picture class="mobile-profile-picture">
+<img src="img/profiles/jan-profile-600.jpg" media="(max-width: 1000px)"
+alt="Jan Sullivan"
+srcset="img/profiles/jan-profile-600.jpg 800w,
+        img/profiles/jan-profile-800.jpg 1200w">
+</picture>
 
 <strong style="padding-bottom:1.5rem;">JAN SULLIVAN</strong>
 </div>
@@ -511,7 +564,13 @@ advisory talent.</p>
 
 
 <div class="sticky-profile">
-<picture class="mobile-profile-picture"><img src="" alt="Keith Mackenzie"></picture>
+<div class="sticky-profile">
+<picture class="mobile-profile-picture">
+<img src="img/profiles/keith-profile-600.jpg" media="(min-width: 600px)"
+alt="Keith MacKenzie"
+srcset="img/profiles/keith-profile-600.jpg 600w,
+        img/profiles/keith-profile-800.jpg 800w">
+</picture>
 
 <strong style="padding-bottom:1.5rem;">KEITH MACKENZIE</strong>
 </div>
@@ -671,14 +730,36 @@ RESULTS
 
 
 
-</main>
-
-
-
 </section>
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
