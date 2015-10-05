@@ -358,20 +358,23 @@ margin-bottom: 2rem;
 
 header {
 font-family: ImpactWGL;
-font-size: 2.5rem;
+font-size: 14vw;
 }
+
+
 
 
 
 strong {
 font-family: AvenirLTStd-Heavy;
-font-size: 1rem;
+font-size: 4.2vw;
 }
 
 
-p {
+.paragraph {
+
 font-family: AvenirLTStd-Book;
-font-size: 0.8rem;
+font-size: 4.2vw;
 }
 
 
