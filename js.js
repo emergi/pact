@@ -1,3 +1,16 @@
+// SCROLL EASING
+
+jQuery.easing['jswing'] = jQuery.easing['swing'];
+jQuery.extend( jQuery.easing,
+{
+	def: 'easeInOutSine',
+    easeInOutSine: function(x, t, b, c, d) {
+        return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+    }
+});
+
+
+
 
 // UNDER 800PX SWITCHES TO MOBILE SITE
 
@@ -123,23 +136,23 @@ else {
 
 // MOBILE SITE
 
-// $(function(){
-//  var shrinkHeader = 300;
-//   $(window).scroll(function() {
-//     var scroll = getCurrentScroll();
-//       if ( scroll >= shrinkHeader ) {
-//            $('.sticky-header').addClass('shrink');
+$(function(){
+ var shrinkHeader = 2150;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.mobile-profile-picture').addClass('shrink');
            
-//         }
-//         else {
+        }
+        else {
         	
-//             $('.sticky-header').removeClass('shrink');
-//         }
-//   });
-// function getCurrentScroll() {
-//     return window.pageYOffset || document.documentElement.scrollTop;
-//     }
-// });
+            $('.mobile-profile-picture').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
 
 
 
@@ -258,13 +271,3 @@ $(function() {
 };
 
 
-// SCROLL EASING
-
-jQuery.easing['jswing'] = jQuery.easing['swing'];
-jQuery.extend( jQuery.easing,
-{
-	def: 'easeInOutSine',
-    easeInOutSine: function(x, t, b, c, d) {
-        return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
-    }
-});
