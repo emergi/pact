@@ -138,6 +138,15 @@ else {
 
 $(function(){
  var shrinkHeader = 2150;
+ var shrinkPaul = 2150;
+ var shrinkJan	= 3500;
+ var shrinkKeith = 3000;
+ var shrinkJerry = 3500;
+
+
+
+
+
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
@@ -148,7 +157,29 @@ $(function(){
         	
             $('.mobile-profile-picture').removeClass('shrink');
         }
+
+              if ( scroll >= shrinkJan ) {
+           $('#mobile-profile-picture-jan').addClass('shrink');
+           console.log("jan shrink");
+           
+        }
+        else {
+        	
+            $('#mobile-profile-picture-jan').removeClass('shrink');
+            console.log("jan back");
+        }
   });
+
+
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+
+  });
+
+
+
+
+
 function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
     }

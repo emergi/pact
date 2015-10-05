@@ -438,15 +438,6 @@ margin-bottom: 5vh;
 
 
 
-.sticky-profile .shrink{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-}
-
-
 
 .mobile-profile-picture.shrink  {
 width: 80%;
@@ -458,20 +449,6 @@ display: inline-block;
     transition: all 0.15s;
 
 }
-
-.shrink strong {
-
-
-
-}
-/*
-.mobile-profile-picture img {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-}*/
 
 
 .mobile-profile-picture {
@@ -487,7 +464,15 @@ display: inline-block;
 }
 
 
+#mobile-profile-picture-paul,
+#mobile-profile-picture-jan,
+#mobile-profile-picture-keith,
+#mobile-profile-picture-jerry {
 
+
+
+
+}
 
 
 
