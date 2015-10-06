@@ -136,38 +136,159 @@ else {
 
 // MOBILE SITE
 
+
+
+
+
+
+
+
+
+var scrollTimer, lastScrollFireTime = 0;
+
+$(window).on('scroll', function() {
+
+    var minScrollTime = 100;
+    var now = new Date().getTime();
+
+    function processScroll() {
+        console.log(new Date().getTime().toString());
+    }
+
+    if (!scrollTimer) {
+        if (now - lastScrollFireTime > (3 * minScrollTime)) {
+            processScroll();   // fire immediately on first scroll
+            lastScrollFireTime = now;
+        }
+        scrollTimer = setTimeout(function() {
+            scrollTimer = null;
+            lastScrollFireTime = new Date().getTime();
+            processScroll();
+        }, minScrollTime);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function(){
+
+
+
+
+
+
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+
+
+    }
+
+
+
+
+
+
+
+var minHeight = 1000;
+var currentScroll = getCurrentScroll();
+
+console.log(currentScroll);
+if (currentScroll >= minHeight) {
+
+
+// function imageResize (e){
+// if(window.pageYOffset >= minHeight) 
+console.log("paskaa");
+
 $(function(){
  var shrinkHeader = 2150;
  var shrinkPaul = 2150;
  var shrinkJan	= 3500;
- var shrinkKeith = 3000;
- var shrinkJerry = 3500;
+ var shrinkKeith = 5500;
+ var shrinkJerry = 7500;
 
 
-
-
-
-  $(window).scroll(function() {
+  $(window).on('scroll.mobile-profile-picture', function() {
     var scroll = getCurrentScroll();
-      if ( scroll >= shrinkHeader ) {
-           $('.mobile-profile-picture').addClass('shrink');
-           
-        }
-        else {
-        	
-            $('.mobile-profile-picture').removeClass('shrink');
-        }
 
-              if ( scroll >= shrinkJan ) {
-           $('#mobile-profile-picture-jan').addClass('shrink');
+
+
+
+		if ( scroll >= shrinkHeader ) {
+			$('.mobile-profile-picture-paul').addClass('shrink');
+			console.log("paul shrink");
+			$(window).off('.mobile-profile-picture-paul');
+
+			}
+			else {
+
+			$('.mobile-profile-picture-paul').removeClass('shrink');
+			console.log("paul back");
+			$(window).off('.mobile-profile-picture-paul');
+		}
+
+
+
+
+	     if ( scroll >= shrinkJan ) {
+           $('.mobile-profile-picture-jan').addClass('shrink');
            console.log("jan shrink");
+           $(window).off('.mobile-profile-picture-jan');
            
-        }
-        else {
+	        }
+	        else {
         	
-            $('#mobile-profile-picture-jan').removeClass('shrink');
+            $('.mobile-profile-picture-jan').removeClass('shrink');
             console.log("jan back");
+            $(window).off('.mobile-profile-picture-jan');
         }
+
+
+
+
+
+        if ( scroll >= shrinkKeith) {
+           $('.mobile-profile-picture-keith').addClass('shrink');
+           console.log("keith shrink");
+           $(window).off('.mobile-profile-picture-keith');
+           
+	        }
+	        else {
+        	
+            $('.mobile-profile-picture-keith').removeClass('shrink');
+            console.log("keith back");
+            $(window).off('.mobile-profile-picture-keith');
+        }
+
+
+
+
+        if ( scroll >= shrinkJerry) {
+           $('.mobile-profile-picture-jerry').addClass('shrink');
+           console.log("keith shrink");
+           $(window).off('.mobile-profile-picture-jerry');
+           
+	        }
+	        else {
+        	
+            $('.mobile-profile-picture-jerry').removeClass('shrink');
+            console.log("keith back");
+            $(window).off('.mobile-profile-picture-jerry');
+        }
+
+
+
+
+
   });
 
 
@@ -175,8 +296,6 @@ $(function(){
     var scroll = getCurrentScroll();
 
   });
-
-
 
 
 
@@ -186,9 +305,9 @@ function getCurrentScroll() {
 });
 
 
+}
 
-
-
+});
 
 
 
