@@ -280,11 +280,10 @@ $(function(){
            
 	        }
 	        // else {
-        	
             // $('.mobile-profile-picture-jerry').removeClass('shrink');
             // console.log("keith back");
             // $(window).off('.mobile-profile-picture-jerry');
-        // }
+       		// }
 
 
            if ( scroll >= shrinkJerry ) {
@@ -292,11 +291,10 @@ $(function(){
            $('.mobile-profile-picture-jerry').css('margin-bottom', '1243px');
 	        }
 	        // else {
-        	
             // $('.mobile-profile-picture-jerry').removeClass('shrink');
             // console.log("keith back");
             // $(window).off('.mobile-profile-picture-jerry');
-        // }
+        	// }
 
 
 

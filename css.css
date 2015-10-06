@@ -42,7 +42,56 @@ z-index:99;
 .png, .logo {
 vertical-align: center;
 width: 100%;
+
 }
+
+/*
+.respimage {
+position:absolute;
+width:100%;
+
+}
+
+.respimage2 {
+position:relative;
+width:100%;
+z-index:99;
+-webkit-user-drag:none;
+vertical-align: center;
+padding-bottom:66%;
+background-size:cover;
+text-indent:-9999px;
+}
+
+#what-is-pact-1, #what-is-pact-2 {
+    -webkit-image-rendering: crisp-edges;
+    width: 100vw;
+    height: 100vh;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mask {
 position:absolute;
@@ -63,6 +112,12 @@ top: 0px;
 overflow: scroll;
 cursor: url('img/closeCursor.svg') 22 45, default; 
 }
+
+
+
+
+
+
 
 
 /*.overlay img {
