@@ -466,6 +466,14 @@ margin-bottom: 5vh;
 
 
 
+.sticky-header {
+      padding-bottom: 150px;
+  position: relative;
+  z-index: 3;
+}
+
+
+
 .sticky-header.fixed {
     top: 0;
     left: 0;
@@ -473,6 +481,9 @@ margin-bottom: 5vh;
     position: fixed;
     z-index: 3;
     opacity: 0.8;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
 
 
