@@ -144,29 +144,29 @@ else {
 
 
 
-var scrollTimer, lastScrollFireTime = 0;
+// var scrollTimer, lastScrollFireTime = 0;
 
-$(window).on('scroll', function() {
+// $(window).on('scroll', function() {
 
-    var minScrollTime = 100;
-    var now = new Date().getTime();
+//     var minScrollTime = 100;
+//     var now = new Date().getTime();
 
-    function processScroll() {
-        console.log(new Date().getTime().toString());
-    }
+//     function processScroll() {
+//         console.log(new Date().getTime().toString());
+//     }
 
-    if (!scrollTimer) {
-        if (now - lastScrollFireTime > (3 * minScrollTime)) {
-            processScroll();   // fire immediately on first scroll
-            lastScrollFireTime = now;
-        }
-        scrollTimer = setTimeout(function() {
-            scrollTimer = null;
-            lastScrollFireTime = new Date().getTime();
-            processScroll();
-        }, minScrollTime);
-    }
-});
+//     if (!scrollTimer) {
+//         if (now - lastScrollFireTime > (3 * minScrollTime)) {
+//             processScroll();   // fire immediately on first scroll
+//             lastScrollFireTime = now;
+//         }
+//         scrollTimer = setTimeout(function() {
+//             scrollTimer = null;
+//             lastScrollFireTime = new Date().getTime();
+//             processScroll();
+//         }, minScrollTime);
+//     }
+// });
 
 
 
@@ -198,23 +198,24 @@ function getCurrentScroll() {
 
 
 
-var minHeight = 1000;
+var minHeight = 2600;
+var maxHeight = 7500;
 var currentScroll = getCurrentScroll();
 
 console.log(currentScroll);
-if (currentScroll >= minHeight) {
+if (currentScroll >= minHeight && currentScroll <= maxHeight) {
 
 
 // function imageResize (e){
 // if(window.pageYOffset >= minHeight) 
-console.log("paskaa");
+
 
 $(function(){
- var shrinkHeader = 2150;
- var shrinkPaul = 2150;
- var shrinkJan	= 3500;
+ var shrinkPaul = 2600;
+ var shrinkJan	= 4200;
  var shrinkKeith = 5500;
  var shrinkJerry = 7500;
+ var endProfile = 8500;
 
 
   $(window).on('scroll.mobile-profile-picture', function() {
@@ -223,67 +224,79 @@ $(function(){
 
 
 
-		if ( scroll >= shrinkHeader ) {
+		if ( scroll >= shrinkPaul && scroll <= shrinkJan ) {
 			$('.mobile-profile-picture-paul').addClass('shrink');
 			console.log("paul shrink");
 			$(window).off('.mobile-profile-picture-paul');
 
 			}
-			else {
+			// else {
 
-			$('.mobile-profile-picture-paul').removeClass('shrink');
-			console.log("paul back");
-			$(window).off('.mobile-profile-picture-paul');
-		}
-
-
+			// $('.mobile-profile-picture-paul').removeClass('shrink');
+			// console.log("paul back");
+			// // $(window).off('.mobile-profile-picture-paul');
+		// }
 
 
-	     if ( scroll >= shrinkJan ) {
+
+
+	     if ( scroll >= shrinkJan && scroll <= shrinkKeith ) {
            $('.mobile-profile-picture-jan').addClass('shrink');
            console.log("jan shrink");
            $(window).off('.mobile-profile-picture-jan');
            
 	        }
-	        else {
+	        // else {
         	
-            $('.mobile-profile-picture-jan').removeClass('shrink');
-            console.log("jan back");
-            $(window).off('.mobile-profile-picture-jan');
-        }
+            // $('.mobile-profile-picture-jan').removeClass('shrink');
+            // console.log("jan back");
+            // $(window).off('.mobile-profile-picture-jan');
+        // }
 
 
 
 
 
-        if ( scroll >= shrinkKeith) {
+        if ( scroll >= shrinkKeith && scroll <= shrinkJerry ) {
            $('.mobile-profile-picture-keith').addClass('shrink');
            console.log("keith shrink");
            $(window).off('.mobile-profile-picture-keith');
            
 	        }
-	        else {
+	        // else {
         	
-            $('.mobile-profile-picture-keith').removeClass('shrink');
-            console.log("keith back");
-            $(window).off('.mobile-profile-picture-keith');
-        }
+            // $('.mobile-profile-picture-keith').removeClass('shrink');
+            // console.log("keith back");
+            // $(window).off('.mobile-profile-picture-keith');
+        // }
 
 
 
 
-        if ( scroll >= shrinkJerry) {
+        if ( scroll >= shrinkJerry && scroll <= endProfile ) {
            $('.mobile-profile-picture-jerry').addClass('shrink');
            console.log("keith shrink");
            $(window).off('.mobile-profile-picture-jerry');
            
 	        }
-	        else {
+	        // else {
         	
-            $('.mobile-profile-picture-jerry').removeClass('shrink');
-            console.log("keith back");
-            $(window).off('.mobile-profile-picture-jerry');
-        }
+            // $('.mobile-profile-picture-jerry').removeClass('shrink');
+            // console.log("keith back");
+            // $(window).off('.mobile-profile-picture-jerry');
+        // }
+
+
+           if ( scroll >= shrinkJerry ) {
+           // $( '.mobile-profile-picture-jerry' ).after( '<div id="offset-space"></div>' );
+           $('.mobile-profile-picture-jerry').css('margin-bottom', '1243px');
+	        }
+	        // else {
+        	
+            // $('.mobile-profile-picture-jerry').removeClass('shrink');
+            // console.log("keith back");
+            // $(window).off('.mobile-profile-picture-jerry');
+        // }
 
 
 

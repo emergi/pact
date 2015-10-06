@@ -416,7 +416,7 @@ margin-bottom: 5vh;
     left: 0;
     right: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 3;
     opacity: 0.8;
 }
 
@@ -437,61 +437,49 @@ margin-bottom: 5vh;
 /*       STICKY PROFILE       */
 
 
-.mobile-profile-picture-paul.shrink,
-.mobile-profile-picture-jan.shrink,
-.mobile-profile-picture-keith.shrink,
-.mobile-profile-picture-jerry.shrink{
-
-width: 80%;
-text-align:center;
-display: inline-block;
-    -webkit-transition: all 0.15s;
-    -moz-transition: all 0.15s;
-    -o-transition: all 0.15s;
-    transition: all 0.15s;
-
-    
-}
-
-
-.mobile-profile-picture.shrink  {
-width: 80%;
-text-align:center;
-display: inline-block;
-    -webkit-transition: all 0.15s;
-    -moz-transition: all 0.15s;
-    -o-transition: all 0.15s;
-    transition: all 0.15s;
-
-}
-
-
-.mobile-profile-picture {
-    display: inline-block;
-    text-align:center;
-    width: 100%;
-
+.mobile-profile-picture-paul.shrink img,
+.mobile-profile-picture-jan.shrink img,
+.mobile-profile-picture-keith.shrink img,
+.mobile-profile-picture-jerry.shrink  img{
+/*    position: relative;
+    z-index: 0;
+*/    width: 70%;
+    /*text-align:center;*/
+    /*display: inline-block;*/
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     -o-transition: all 0.35s;
     transition: all 0.35s;
-
-}
-
-
-#mobile-profile-picture-paul,
-#mobile-profile-picture-jan,
-#mobile-profile-picture-keith,
-#mobile-profile-picture-jerry {
-
-
-
-
 }
 
 
 
 
+
+
+
+.mobile-profile-picture-paul img,
+.mobile-profile-picture-jan img,
+.mobile-profile-picture-keith img,
+.mobile-profile-picture-jerry  img {
+/*    position: relative;
+    z-index: 0;
+*/    /*display: inline-block;*/
+    /*text-align:center;*/
+    width: 100%;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+
+#offset-space {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
 
 
 
