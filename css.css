@@ -393,7 +393,10 @@ height: 255px;
 @media (max-width: 799px) {
 
 html {
+background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
+-webkit-overflow-scrolling: touch;
 max-width: 800px;
+height: 100%
 }
 
 
@@ -402,11 +405,12 @@ body {
 }
 
 #mobile{ 
--webkit-overflow-scrolling: touch;
+
 margin: 0;
 display: block;
 margin-left: 10vw;
 margin-right: 10vw;
+
 }
 
 

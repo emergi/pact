@@ -224,77 +224,77 @@ $(function(){
 
 
 
-		if ( scroll >= shrinkPaul && scroll <= shrinkJan ) {
-			$('.mobile-profile-picture-paul').addClass('shrink');
-			console.log("paul shrink");
-			$(window).off('.mobile-profile-picture-paul');
+		// if ( scroll >= shrinkPaul && scroll <= shrinkJan ) {
+		// 	$('.mobile-profile-picture-paul').addClass('shrink');
+		// 	console.log("paul shrink");
+		// 	$(window).off('.mobile-profile-picture-paul');
 
-			}
-			// else {
+		// 	}
+		// 	// else {
 
-			// $('.mobile-profile-picture-paul').removeClass('shrink');
-			// console.log("paul back");
-			// // $(window).off('.mobile-profile-picture-paul');
-		// }
-
-
+		// 	// $('.mobile-profile-picture-paul').removeClass('shrink');
+		// 	// console.log("paul back");
+		// 	// // $(window).off('.mobile-profile-picture-paul');
+		// // }
 
 
-	     if ( scroll >= shrinkJan && scroll <= shrinkKeith ) {
-           $('.mobile-profile-picture-jan').addClass('shrink');
-           console.log("jan shrink");
-           $(window).off('.mobile-profile-picture-jan');
+
+
+	 //     if ( scroll >= shrinkJan && scroll <= shrinkKeith ) {
+  //          $('.mobile-profile-picture-jan').addClass('shrink');
+  //          console.log("jan shrink");
+  //          $(window).off('.mobile-profile-picture-jan');
            
-	        }
-	        // else {
+	 //        }
+	 //        // else {
         	
-            // $('.mobile-profile-picture-jan').removeClass('shrink');
-            // console.log("jan back");
-            // $(window).off('.mobile-profile-picture-jan');
-        // }
+  //           // $('.mobile-profile-picture-jan').removeClass('shrink');
+  //           // console.log("jan back");
+  //           // $(window).off('.mobile-profile-picture-jan');
+  //       // }
 
 
 
 
 
-        if ( scroll >= shrinkKeith && scroll <= shrinkJerry ) {
-           $('.mobile-profile-picture-keith').addClass('shrink');
-           console.log("keith shrink");
-           $(window).off('.mobile-profile-picture-keith');
+  //       if ( scroll >= shrinkKeith && scroll <= shrinkJerry ) {
+  //          $('.mobile-profile-picture-keith').addClass('shrink');
+  //          console.log("keith shrink");
+  //          $(window).off('.mobile-profile-picture-keith');
            
-	        }
-	        // else {
+	 //        }
+	 //        // else {
         	
-            // $('.mobile-profile-picture-keith').removeClass('shrink');
-            // console.log("keith back");
-            // $(window).off('.mobile-profile-picture-keith');
-        // }
+  //           // $('.mobile-profile-picture-keith').removeClass('shrink');
+  //           // console.log("keith back");
+  //           // $(window).off('.mobile-profile-picture-keith');
+  //       // }
 
 
 
 
-        if ( scroll >= shrinkJerry && scroll <= endProfile ) {
-           $('.mobile-profile-picture-jerry').addClass('shrink');
-           console.log("keith shrink");
-           $(window).off('.mobile-profile-picture-jerry');
+  //       if ( scroll >= shrinkJerry && scroll <= endProfile ) {
+  //          $('.mobile-profile-picture-jerry').addClass('shrink');
+  //          console.log("keith shrink");
+  //          $(window).off('.mobile-profile-picture-jerry');
            
-	        }
-	        // else {
-            // $('.mobile-profile-picture-jerry').removeClass('shrink');
-            // console.log("keith back");
-            // $(window).off('.mobile-profile-picture-jerry');
-       		// }
+	 //        }
+	 //        // else {
+  //           // $('.mobile-profile-picture-jerry').removeClass('shrink');
+  //           // console.log("keith back");
+  //           // $(window).off('.mobile-profile-picture-jerry');
+  //      		// }
 
 
-           if ( scroll >= shrinkJerry ) {
-           // $( '.mobile-profile-picture-jerry' ).after( '<div id="offset-space"></div>' );
-           $('.mobile-profile-picture-jerry').css('margin-bottom', '1243px');
-	        }
-	        // else {
-            // $('.mobile-profile-picture-jerry').removeClass('shrink');
-            // console.log("keith back");
-            // $(window).off('.mobile-profile-picture-jerry');
-        	// }
+  //          if ( scroll >= shrinkJerry ) {
+  //          // $( '.mobile-profile-picture-jerry' ).after( '<div id="offset-space"></div>' );
+  //          $('.mobile-profile-picture-jerry').css('margin-bottom', '1243px');
+	 //        }
+	 //        // else {
+  //           // $('.mobile-profile-picture-jerry').removeClass('shrink');
+  //           // console.log("keith back");
+  //           // $(window).off('.mobile-profile-picture-jerry');
+  //       	// }
 
 
 
