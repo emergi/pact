@@ -46,11 +46,11 @@ vertical-align: center;
 
 }
 
-picture img {
+/*picture img {
 
 width:80vw!important;
 
-}
+}*/
 
 
 
@@ -410,91 +410,17 @@ width: 100%;
 
 
 
-.sticky-header {
-margin-bottom: 150px;
-    position: relative;
-    z-index: 50;
-    -webkit-transform: translateZ(0);
-}
-
-
-
-.sticky-header.fixed {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 50;
-    opacity: 0.8;
-/*   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;*/
-   -webkit-transform: translateZ(0);
-}
-
-
-.sticky-header.fixed.absolute {
-    position: absolute;
-    /*-webkit-transform: translateZ(0);*/
-}
-
-
-
-
-
-
-.single-item {
-  position: relative;
-}
-
-.sticky-header {
-  border-bottom: 1px solid black;
-  height: 60px;
-  line-height: 60px;
-  margin-bottom: 20px;
-}
-.sticky-header .some-title {
-  padding-left: 15px;
-  display: inline-block;
-}
-
-.some-content {
-  height:50rem;
-  margin-bottom: 30px;
-}
-
-.badass {
-  background-color: #e4f1be;
-}
-
-
-
-.floating-header {
-    top:0;
-position: fixed;
-z-index:99;
-
-}
-
-
-
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-color: black;
 }
 
 .sticky:before,
 .sticky:after {
     content: '';
-    display: table;
-        font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-color: black;
+    display: table; 
 }
 
 
@@ -505,21 +431,17 @@ color: black;
 
 
 
-
-
+header {
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+font-size: 14vw;
+text-align: center;
+}
 
 
 strong, p {
 text-align: center;
 display: block;
 margin-bottom: 2rem;
-}
-
-
-header {
-font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-
 }
 
 
@@ -559,35 +481,6 @@ display:none;
 display:none;
 }
  
-
-
-/*header, strong, p {
-text-align: center;
-display: block;
-margin-bottom: 2rem;
-}
-
-
-header {
-font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-margin-bottom: 5vh;
-}*/
-
-
-
-/*       STICKY HEADER       */
-
-
-
-
-
-
-.stickyWrap {
-    text-align: center;
-}
-
-
 
 
 
@@ -641,7 +534,17 @@ margin-bottom: 5vh;
 }
 
 
-
+#mobile-profile-picture-paul,
+#mobile-profile-picture-jan,
+#mobile-profile-picture-keith,
+#mobile-profile-picture-jerry {
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+    width: 80vw;
+    text-align:center;
+    margin: 0 auto;
+}
 
 
 
@@ -674,13 +577,13 @@ width: 10rem;
 transition: all 0.25s;
 text-align:center;
 }
-
+*/
 
 .shrink img {
 margin-top: 2rem;
 width: 6rem;
 
-}*/
+}
 
 
 

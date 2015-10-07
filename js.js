@@ -144,6 +144,74 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 }
 
 
+
+
+
+
+ var shrinkPaul = 2600;
+ var shrinkJan	= 4200;
+ var shrinkKeith = 5500;
+ var shrinkJerry = 7500;
+ var endProfile = 8500;
+
+
+
+
+var paul = document.getElementById("mobile-profile-picture-paul");
+var jan = document.getElementById("mobile-profile-picture-jan");
+var keith = document.getElementById("mobile-profile-picture-keith");
+var jerry = document.getElementById("mobile-profile-picture-jerry");
+
+
+
+window.onscroll = function(e) {
+    if(window.scrollY) {
+        if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
+            paul.style.width = "50vw";
+            console.log("found paul!");
+        } 
+        if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
+            jan.style.width = "50vw";
+            console.log("found jan!");
+        } 
+        if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
+            keith.style.width = "50vw";
+            console.log("found Keith!");
+        } 
+        if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
+            jerry.style.width = "50vw";
+            console.log("found Jerry!");
+        } 
+
+
+
+
+        else {
+            // paul.style.width = "80vw";
+            // console.log("Paul's gone");
+            return;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.getElementById('Noite').style.width='300';
+
+
+
+
+
 };
 
 
@@ -196,14 +264,7 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 
 // function getCurrentScroll() {
 //     return window.pageYOffset || document.documentElement.scrollTop;
-
-
 //     }
-
-
-
-
-
 
 
 // var minHeight = 2600;
@@ -309,6 +370,15 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 
 
 //   });
+
+//  });
+//  };
+// });
+
+
+
+
+
 
 
 // //   $(window).scroll(function() {
