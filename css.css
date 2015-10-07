@@ -382,13 +382,8 @@ height: 255px;
 html {
 background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
 max-width: 800px;
-
+height: 20000px;
 -webkit-overflow-scrolling: touch;
-}
-
-
-body {
-
 }
 
 #mobile{
@@ -400,7 +395,7 @@ margin-right: 10vw;
 
 #pact-logo-mobile {
 width: 80vw;
-margin-top: 30vh;
+margin-top: 20vh;
 margin-bottom: 30vh;
 }
 
@@ -423,45 +418,61 @@ width: 100%;
     display: table; 
 }
 
-
-
-
-
-
-
-
-
-header {
-font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-text-align: center;
+header{
+  text-align: center;  
 }
 
 
 strong, p {
-text-align: center;
 display: block;
-margin-bottom: 2rem;
 }
 
+header {
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+font-size: 14vw;
+}
+
+p {
+font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+font-size: 2rem;
+line-height: 2.5rem;
+margin-bottom: 5vh;
+}
 
 strong {
 font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
-font-size: 4.2vw;
+font-size: 2rem;
+margin-top: 5vh;
+margin-bottom: 3vh;
 }
 
 
-.paragraph {
-font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
-font-size: 4.2vw;
-line-height: 3.2vh;
+#what-is-pact-strong {
+margin-bottom: 10vh;
+}
+
+
+
+
+#what-we-do-article {
+margin-bottom: 50vh;
+}
+
+
+.end-of-sub-article{
+margin-bottom: 20vh;
+}
+
+.article-contents {
+margin-top: 50vh;
+margin-bottom: 20vh;
 }
 
 
 .mobile-contact-buttons {
 width: 100%;
 text-align:center;
-margin-bottom: 20rem;
+margin-top: -5vh;
 margin-left: 26vw;
 }
 
@@ -469,6 +480,48 @@ margin-left: 26vw;
 a .iconsContact{
 padding-right: 2vw;
 width: 8vw;
+}
+
+
+.sticky-profile {
+margin-top: 30vh;
+
+}
+
+#why-pact,
+#bold-list {
+margin-top: 50vh;
+}
+
+
+#bold-list{
+text-align: left;
+}
+
+.left-align{
+    float: left;
+text-align: left;
+max-width: 50vw;
+}
+
+
+.right-align{
+    float: right;
+text-align: right;
+max-width: 50vw;
+}
+
+#why-pact-header {
+margin-top: 50vh;
+}
+
+
+#contact-us {
+    margin-top: 1000px;
+}
+
+#contact-us-header{
+    margin-top: 1000px;
 }
 
 
@@ -483,57 +536,6 @@ display:none;
  
 
 
-
-/*       STICKY PROFILE       */
-
-
-.mobile-profile-picture-paul.shrink img,
-.mobile-profile-picture-jan.shrink img,
-.mobile-profile-picture-keith.shrink img,
-.mobile-profile-picture-jerry.shrink  img{
-/*    position: relative;
-    z-index: 0;
-*/    width: 70%;
-    /*text-align:center;*/
-    /*display: inline-block;*/
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -o-transition: all 0.35s;
-    transition: all 0.35s;
-    -webkit-transform: translateZ(0);
-}
-
-
-
-
-
-
-
-.mobile-profile-picture-paul img,
-.mobile-profile-picture-jan img,
-.mobile-profile-picture-keith img,
-.mobile-profile-picture-jerry  img {
-/*    position: relative;
-    z-index: 0;
-*/    /*display: inline-block;*/
-    /*text-align:center;*/
-    width: 100%;
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -o-transition: all 0.35s;
-    transition: all 0.35s;
-    -webkit-transform: translateZ(0);
-}
-
-
-
-#offset-space {
-    height: 100px;
-    width: 100%;
-    background-color: blue;
-}
-
-
 #mobile-profile-picture-paul,
 #mobile-profile-picture-jan,
 #mobile-profile-picture-keith,
@@ -545,47 +547,6 @@ display:none;
     text-align:center;
     margin: 0 auto;
 }
-
-
-
-/*header {
-    
-  width: 100%;
-  padding-bottom:2rem;
-
-
-
-
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    transition: all 0.25s;
-
-    text-align:center;
-  top: 0;
-  position: fixed;
-}*/
-
-
-/*header img {
-margin-top: 2rem;
-display: inline-block;
-background-color: rgba(210,210,210, 0.65);
-
-width: 10rem;
--webkit-transition: all 0.25s;
--moz-transition: all 0.25s;
-transition: all 0.25s;
-text-align:center;
-}
-*/
-
-.shrink img {
-margin-top: 2rem;
-width: 6rem;
-
-}
-
-
 
 
 }
