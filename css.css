@@ -37,13 +37,33 @@ display: none;
 position:absolute;
 z-index:99;
 -webkit-user-drag:none;
+
 }
 
 .png, .logo {
 vertical-align: center;
-width: 100%;
+
 
 }
+
+/*.section picture {
+
+ width: 800px!important;
+}
+
+.test {
+width: 800px!important;
+
+}*/
+
+
+.logo {
+/*width: 80vw;
+margin-top:10vw;
+margin-left:10vw;*/
+}
+
+
 
 /*
 .respimage {
@@ -136,7 +156,6 @@ width: 100%;
 }
 
 .profilePicture {
-width: 20vw;
 margin-left: 22vw;
 margin-right: 5vw;
 }
@@ -177,15 +196,12 @@ margin-right: 5vw;
 padding-right: 0.5vw; 
 z-index: 1001;
 width: 20px;
-cursor: url('img/closeCursor.svg') 22 45, default; 
 }
 
 
 
 .icon:hover {
 fill:red;
-
-
 }
 
 
@@ -201,7 +217,6 @@ text-align: center;
 font-size: 25px;
 padding: 15px 10 5px 15px;
 cursor: pointer;
-
 }
 
 

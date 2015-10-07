@@ -15,7 +15,23 @@
     <link href="css.css" rel="stylesheet" type="text/css" />
     </head>
 
+  <script>
+    document.createElement( "picture" );
+  </script>
+<script src="picturefill.min.js" async></script>
 
+
+<style>
+    
+@media (min-width: 800px){ 
+.bgimgs {
+
+display: none;
+
+}
+}
+
+</style>
 
     <body class="home" data-stellar-background-ratio="0.1" data-stellar-offset-parent="true">
 
@@ -48,36 +64,73 @@
         <!--        LOGO             -->
 
         <div class="section" data-stellar-offset-parent="true" >
-            <picture>
-                <img class="bgimgs logo" src="img/logo1.png"
-                data-stellar-ratio="0.8"
-                sizes="80vw"
-                srcset="img/logo1.png 800w,
-                        img/logo1.png 1280w,
-                        img/logo1.png 2360w">
-                <img class="bgimgs logo" src="img/logo2.png"
-                data-stellar-ratio="1.2"
-                sizes="80vw"
-                srcset="img/logo2.png 800w,
-                        img/logo2.png 1280w,
-                        img/logo2.png 2360w">
-            </picture>
+
+
+<!--             <img alt="Pact logo" class="bgimgs png" data-stellar-ratio="0.8"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 800w, 
+            img/logo1.png 900w"
+            sizes="(min-width: 800px) 50vw, (max-width: 1800px) 50vw, 40vw"/>
+
+            <img alt="Pact logo" class="bgimgs png" data-stellar-ratio="1.2"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 800w, 
+            img/logo2.png 900w"
+            sizes="(min-width: 800px) 50vw, (max-width: 1800px) 50vw, 40vw"/> -->
+
+
+                <picture class="bgimgs png" data-stellar-ratio="0.8">
+                <source media="(min-width: 800px)" 
+                srcset="img/logo1.png 900w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+                <picture class="bgimgs png" data-stellar-ratio="0.8">
+                <source media="(min-width: 800px)" 
+                srcset="img/logo2.png 900w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+
+
         </div>
 
 
         <!--        WHAT IS PACT             -->
 
         <div class="section" data-stellar-offset-parent="true">
+   
+               
+<!--                 <img class="bgimgs png" data-stellar-ratio="1.0"
+                srcset="about:blank 800w, img/1280/what-is-pact-1280-1.png 1280w, img/2360/what-is-pact-2360-1.png 2360w" sizes="(max-width: 1800px) 1000px, 90vw"/>
+ 
 
-                <img class="bgimgs png" data-stellar-ratio="1.0"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/what-is-pact-1280-1.png 2480w,
-                img/2360/what-is-pact-2360-1.png 2360w"/>
+                <img class="bgimgs png" data-stellar-ratio="0.8"
+                srcset="about:blank 800w, img/1280/what-is-pact-1280-2.png 1280w, img/2360/what-is-pact-2360-2.png 2360w" sizes="(max-width: 1800px) 1000px, 90vw"/> -->
 
-                <img class="bgimgs png" data-stellar-ratio="1.2"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/what-is-pact-1280-2.png 2480w,
-                img/2360/what-is-pact-2360-2.png 2360w"/>
+
+                <picture class="bgimgs png" data-stellar-ratio="0.8">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/what-is-pact-1280-1.png 1280w, 
+                img/2360/what-is-pact-2360-1.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 80vw, (max-width: 1400px) 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+
+                <picture class="bgimgs png" data-stellar-ratio="1.2">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/what-is-pact-1280-2.png 1280w, 
+                img/2360/what-is-pact-2360-2.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 80vw, (max-width: 1400px) 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+
 
         </div>
 
@@ -86,16 +139,36 @@
 
         <div class="section" data-stellar-offset-parent="true">
 
+
+<!-- 
                 <img class="bgimgs png" data-stellar-ratio="1.0"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/what-we-do-1280-1.png 1480w,
-                img/2360/what-we-do-2360-1.png 2360w">
+                srcset="about:blank 800w, img/1280/what-we-do-1280-1.png 1280w, img/2360/what-we-do-2360-1.png 2360w" sizes="(max-width: 1800px) 40vw, 90vw"/>
+ 
+
+                <img class="bgimgs png" data-stellar-ratio="0.8"
+                srcset="about:blank 800w, img/1280/what-we-do-1280-2.png 1280w, img/2360/what-we-do-2360-2.png 2360w" sizes="(max-width: 1800px) 40vw, 90vw"/>
+
+ -->
 
 
-                <img class="bgimgs png" data-stellar-ratio="1.2"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/what-we-do-1280-2.png 1480w,
-                img/2360/what-we-do-2360-2.png 2360w">
+
+
+                <picture class="bgimgs png" data-stellar-ratio="1.2">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/what-we-do-1280-1.png 1280w, 
+                img/2360/what-we-do-2360-1.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+                <picture class="bgimgs png" data-stellar-ratio="1.0">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/what-we-do-1280-2.png 1280w, 
+                img/2360/what-we-do-2360-2.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
 
         </div>
 
@@ -105,16 +178,24 @@
         <div class="section" data-stellar-offset-parent="true">
 
             
-                <img class="bgimgs png" data-stellar-ratio="0.8"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/who-we-are-1280-1.png 1480w,
-                img/2360/who-we-are-2360-1.png 2360w">
 
 
-                <img class="bgimgs png" data-stellar-ratio="1.0"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/who-we-are-1280-2.png 1480w,
-                img/2360/who-we-are-2360-2.png 2360w">
+                <picture class="bgimgs png" data-stellar-ratio="1.2">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/who-we-are-1280-1.png 1280w, 
+                img/2360/who-we-are-2360-1.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+                <picture class="bgimgs png" data-stellar-ratio="1.0">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/who-we-are-1280-2.png 1280w, 
+                img/2360/who-we-are-2360-2.png 2360w"
+                sizes="(max-width: 1200px) 80vw, (max-width: 1300px) 60vw, (max-width: 1400px) 60vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
             
 
                 <div class="mask" data-stellar-ratio="1.2">
@@ -129,11 +210,30 @@
                 <section id="paulInfo" class="overlay">  
                     <div class="overlayContentWrap">
 
-                        <img class="profilePicture"
+
+                <picture class="profilePicture">
+                <img media="(min-width: 800px)" 
+                srcset="img/profiles/paul-profile-800.jpg 800w",
+                sizes="(max-width: 1800px) 40vw, 30vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Paul Angeli">
+                </picture>
+
+
+<!-- 
+                <picture class="profilePicture" data-stellar-ratio="1.0">
+                <source media="(min-width: 1000px)" 
+                srcset="img/profiles/paul-profile-600.jpg 800w, img/profiles/paul-profile-800.jpg 1000w">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Paul Angeli">
+                </picture> -->
+
+
+
+
+<!--                         <img class="profilePicture"
                         alt="Paul Angeli"
                         srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
                         img/profiles/paul-profile-800.jpg 1480w,
-                        img/profiles/paul-profile-1000.jpg 2360w"/>
+                        img/profiles/paul-profile-1000.jpg 2360w"/> -->
 
                         <div class="overlayText">
                             <header class="profileName">PAUL ANGELI</header>
@@ -162,11 +262,14 @@
                 <section id="jerryInfo" class="overlay">
                     <div class="overlayContentWrap">
                        
-                            <img class="profilePicture"
-                            alt="Jerry Daniels"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                            img/profiles/jerry-profile-800.jpg 1280w,
-                            img/profiles/jerry-profile-1000.jpg 2360w"/>
+
+                            <picture class="profilePicture">
+                            <img media="(min-width: 800px)" 
+                            srcset="img/profiles/jerry-profile-800.jpg 800w",
+                            sizes="(max-width: 1800px) 40vw, 30vw">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Jerry Daniels">
+                            </picture>
+
                         
 
                         <div class="overlayText">
@@ -197,11 +300,15 @@
 
                 <section id="janInfo" class="overlay">
                     <div class="overlayContentWrap">
-                            <img class="profilePicture"
-                            alt="Jan Sullivan"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                            img/profiles/jan-profile-800.jpg 1280w,
-                            img/profiles/jan-profile-1000.jpg 2360w"/>
+
+
+                            <picture class="profilePicture">
+                            <img media="(min-width: 800px)" 
+                            srcset="img/profiles/jan-profile-800.jpg 800w",
+                            sizes="(max-width: 1800px) 40vw, 30vw">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Jan Sullivan">
+                            </picture>
+
 
                         <div class="overlayText">
                             <header class="profileName">JAN SULLIVAN</header>
@@ -230,11 +337,16 @@
 
                 <section id="keithInfo" class="overlay">
                     <div class="overlayContentWrap">
-                            <img class="profilePicture"
-                            alt="Keith MacKenzie"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                            img/profiles/keith-profile-800.jpg 1280w,
-                            img/profiles/keith-profile-1000.jpg 2360w"/>
+
+                            
+                            <picture class="profilePicture">
+                            <img media="(min-width: 800px)" 
+                            srcset="img/profiles/keith-profile-800.jpg 800w",
+                            sizes="(max-width: 1800px) 40vw, 30vw">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Keith MacKenzie">
+                            </picture>
+
+
 
                         <div class="overlayText">
                             <header class="profileName">KEITH MACKENZIE</header>
@@ -267,33 +379,54 @@
 
         <div class="section" data-stellar-offset-parent="true">
 
-                <img class="bgimgs png" data-stellar-ratio="0.8"                
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/why-pact-1280-1.png 1480w,
-                img/2360/why-pact-2360-1.png 2360w">
 
-                <img class="bgimgs png" data-stellar-ratio="1.2"             
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/why-pact-1280-2.png 1480w,
-                img/2360/why-pact-2360-2.png 2360w">
+                <picture class="bgimgs png" data-stellar-ratio="0.8">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/why-pact-1280-1.png 1280w, 
+                img/2360/why-pact-2360-1.png 2360w"
+                sizes="(max-width: 1800px) 100vw, 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+                <picture class="bgimgs png" data-stellar-ratio="1.2">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/why-pact-1280-2.png 1280w, 
+                img/2360/why-pact-2360-2.png 2360w"
+                sizes="(max-width: 1800px) 100vw, 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+
+
         </div>
 
 
         <!--        PHILOSOPHY            -->
 
+
+
+
         <div class="section" data-stellar-offset-parent="true">
-            <picture>
-                <img class="bgimgs png" data-stellar-ratio="0.8"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/philosophy-1280-1.png 1480w,
-                img/2360/philosophy-2360-1.png 2360w">
 
-                <img class="bgimgs png" data-stellar-ratio="1.2"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 2x,
-                img/1280/philosophy-1280-2.png 1480w,
-                img/2360/philosophy-2360-2.png 2360w">
 
-            </picture>
+
+                <picture class="bgimgs png" data-stellar-ratio="0.8">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/philosophy-1280-1.png 1280w, 
+                img/2360/philosophy-2360-1.png 2360w"
+                sizes="(max-width: 1800px) 100vw, 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
+                <picture class="bgimgs png" data-stellar-ratio="1.2">
+                <source media="(min-width: 800px)" 
+                srcset="img/1280/philosophy-1280-2.png 1280w, 
+                img/2360/philosophy-2360-2.png 2360w"
+                sizes="(max-width: 1800px) 100vw, 90vw">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Image">
+                </picture>
+
         </div>
     </div>
 
