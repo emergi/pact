@@ -46,6 +46,19 @@ vertical-align: center;
 
 }
 
+picture img {
+
+width:80vw!important;
+
+}
+
+
+
+
+
+
+
+
 /*.section picture {
 
  width: 800px!important;
@@ -485,6 +498,7 @@ margin-bottom: 5vh;
       padding-bottom: 150px;
   position: relative;
   z-index: 3;
+  -webkit-transform: translateZ(0);
 }
 
 
@@ -499,11 +513,13 @@ margin-bottom: 5vh;
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
+   -webkit-transform: translateZ(0);
 }
 
 
 .sticky-header.fixed.absolute {
     position: absolute;
+    -webkit-transform: translateZ(0);
 }
 
 
