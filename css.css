@@ -402,6 +402,7 @@ body {
 }
 
 #mobile{ 
+-webkit-overflow-scrolling: touch;
 margin: 0;
 display: block;
 margin-left: 10vw;
@@ -547,6 +548,7 @@ margin-bottom: 5vh;
     -moz-transition: all 0.35s;
     -o-transition: all 0.35s;
     transition: all 0.35s;
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -568,6 +570,7 @@ margin-bottom: 5vh;
     -moz-transition: all 0.35s;
     -o-transition: all 0.35s;
     transition: all 0.35s;
+    -webkit-transform: translateZ(0);
 }
 
 
