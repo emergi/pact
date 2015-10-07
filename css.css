@@ -377,26 +377,13 @@ height: 255px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 799px) {
 
 html {
 background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
--webkit-overflow-scrolling: touch;
 max-width: 800px;
-height: 100%
+
+-webkit-overflow-scrolling: touch;
 }
 
 
@@ -404,28 +391,122 @@ body {
 
 }
 
-#mobile{ 
-
+#mobile{
 margin: 0;
 display: block;
 margin-left: 10vw;
 margin-right: 10vw;
-
 }
 
-
+#pact-logo-mobile {
+width: 80vw;
+margin-top: 30vh;
+margin-bottom: 30vh;
+}
 
 article {
 width: 100%;
 }
 
 
-picture {
-margin-top: 5rem;
-margin-bottom: 15rem;
-display: block;
-text-align: center;
+
+.sticky-header {
+margin-bottom: 150px;
+    position: relative;
+    z-index: 50;
+    -webkit-transform: translateZ(0);
 }
+
+
+
+.sticky-header.fixed {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 50;
+    opacity: 0.8;
+/*   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;*/
+   -webkit-transform: translateZ(0);
+}
+
+
+.sticky-header.fixed.absolute {
+    position: absolute;
+    /*-webkit-transform: translateZ(0);*/
+}
+
+
+
+
+
+
+.single-item {
+  position: relative;
+}
+
+.sticky-header {
+  border-bottom: 1px solid black;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.sticky-header .some-title {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.some-content {
+  height:50rem;
+  margin-bottom: 30px;
+}
+
+.badass {
+  background-color: #e4f1be;
+}
+
+
+
+.floating-header {
+    top:0;
+position: fixed;
+z-index:99;
+
+}
+
+
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-family: ImpactWGL, Helvetica Neue, sans-serif;
+font-size: 14vw;
+color: black;
+}
+
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+        font-family: ImpactWGL, Helvetica Neue, sans-serif;
+font-size: 14vw;
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 strong, p {
@@ -438,7 +519,7 @@ margin-bottom: 2rem;
 header {
 font-family: ImpactWGL, Helvetica Neue, sans-serif;
 font-size: 14vw;
-margin-bottom: 5vh;
+
 }
 
 
@@ -499,33 +580,7 @@ margin-bottom: 5vh;
 
 
 
-.sticky-header {
-      padding-bottom: 150px;
-  position: relative;
-  z-index: 3;
-  -webkit-transform: translateZ(0);
-}
 
-
-
-.sticky-header.fixed {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 3;
-    opacity: 0.8;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   -webkit-transform: translateZ(0);
-}
-
-
-.sticky-header.fixed.absolute {
-    position: absolute;
-    -webkit-transform: translateZ(0);
-}
 
 
 .stickyWrap {

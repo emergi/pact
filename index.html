@@ -144,9 +144,6 @@ display: none;
 
 
 
-
-
-
         </div>
 
 
@@ -509,16 +506,30 @@ display: none;
 
         <!--        LOGO        -->
 
-        <picture>
-            <img type="image/svg+xml" src="img/logoMobile.svg" alt="Pact logo"/>
-        </picture>
+ 
+        <img id="pact-logo-mobile" type="image/svg+xml" src="img/logoMobile.svg" alt="Pact logo"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!--        WHAT IS PACT        -->
 
-        <article id="what-is-pact" class="mobile-article">
+        <div id="what-is-pact" class="mobile-article">
             
-            <header class="sticky-header">WHAT IS PACT</header>
+            <div class="sticky">WHAT IS PACT</div>
 
 
             <strong class="what">EXECUTIVE SEARCH AND LEADERSHIP CONSULTING WITH A DIGITAL ENGINE</strong>
@@ -531,13 +542,13 @@ display: none;
 
             <strong style="padding-bottom:1.5rem;">WE ARE PROVEN</strong>
             <p class="paragraph">digital specialists, but this is not a niche. Digital is now standard business practice across all disciplines and sectors. . . .or should be.</p>
-        </article>
+        </div>
 
 
         <!--        WHAT WE DO        -->
 
-        <article class="textContainer">
-            <header id="what-we-do" class="sticky-header">WHAT WE DO</header>
+        <div class="textContainer">
+            <div class="sticky">WHAT WE DO</div>
 
             <strong class="what">CREATING<br>NON-EXECUTIVE/ADVISORY<br>
             TEAMS</strong>
@@ -549,13 +560,13 @@ display: none;
 
             <strong style="padding-bottom:1.5rem;">FORMING INNOVATION LABS</strong>
             <p class="paragraph">we consult with businesses to help them understand what genuine innovation can achieve.</p>
-        </article>
+        </div>
 
 
         <!--        WHO WE ARE            -->
 
         <article class="textContainer">
-            <header id="who-we-are" class="sticky-header">WHO WE ARE</header>
+            <header class="sticky">WHO WE ARE</header>
 
 
             <!--        PAUL ANGELI           -->
@@ -708,7 +719,7 @@ display: none;
 
         <article id="why-pact">
 
-            <header class="sticky-header">WHY PACT</header>
+            <header class="sticky">WHY PACT</header>
 
             <strong id="bold-list" style="padding-bottom:1.5rem;">
             OUR NETWORK OF<br>
@@ -751,7 +762,7 @@ display: none;
         <!--        CONTACT US           -->
 
         <article id="contact-us">
-            <header class="sticky-header">CONTACT US</header>
+            <header class="sticky">CONTACT US</header>
             <picture id="contact-us-map">
                 <img src="" alt="Contact Pact map">
             </picture>
@@ -782,7 +793,7 @@ display: none;
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
         <script src="./jquery.stellar.min.js"></script>
-
+        <script src="./stickyfill.js"></script>
         <script>
         //   $.stellar({
         //    horizontalScrolling:true 
