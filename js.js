@@ -144,12 +144,21 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
     Stickyfill.add(stickyElements[i]);
 }
 
+
+// var shrinkLogo = 200;
+// var shrinkPaul = 7580;
+// var shrinkJan	= 9080;
+// var shrinkKeith = 10580;
+// var shrinkJerry = 12160;
+// var endProfile = 13660;
+
+
 var shrinkLogo = 200;
-var shrinkPaul = 7580;
-var shrinkJan	= 9080;
-var shrinkKeith = 10580;
-var shrinkJerry = 12160;
-var endProfile = 13660;
+var shrinkPaul = 6580;
+var shrinkJan	= 8080;
+var shrinkKeith = 9580;
+var shrinkJerry = 11160;
+var endProfile = 12660;
 
 
 var logo = document.getElementById("pact-logo-mobile");
