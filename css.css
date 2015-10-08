@@ -492,21 +492,29 @@ width: 10vw;
 #mobile-profile-picture-jan,
 #mobile-profile-picture-keith,
 #mobile-profile-picture-jerry {
-    width: 80vw;
-    text-align:center;
-    margin: 0 auto;
-}
+width: 80vw;
+text-align:center;
+margin: auto;
 
-.mobile-profile-picture-minimized {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-perspective: 1000;
+perspective: 1000;
+
 -webkit-transition: all 0.25s;
 -moz-transition: all 0.25s;
 transition: all 0.25s;
-transform: translateZ(-1); 
-display: block;
-width: 60vw!important;
 }
 
 
+.mobile-profile-picture-minimized {
+
+position: relative;
+z-index:-99;
+
+display: block;
+width: 60vw!important;
+}
 
 
 #why-pact-strong-list,
@@ -515,9 +523,11 @@ text-align: left;
 width: 80vw;
 }
 
+
 .why-pact-strong{
 margin-top: 10vh;
 }
+
 
 .why-pact-right-align {
 text-align: right;
