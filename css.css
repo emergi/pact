@@ -492,10 +492,6 @@ width: 10vw;
 #mobile-profile-picture-jan,
 #mobile-profile-picture-keith,
 #mobile-profile-picture-jerry {
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    transition: all 0.25s;
-    -webkit-transform: translate3d(0, 0, 0);
     width: 80vw;
     text-align:center;
     margin: 0 auto;
@@ -505,7 +501,7 @@ width: 10vw;
 -webkit-transition: all 0.25s;
 -moz-transition: all 0.25s;
 transition: all 0.25s;
--webkit-transform: translate3d(0, 0, 0);
+transform: translateZ(-1); 
 display: block;
 width: 60vw!important;
 }
