@@ -392,10 +392,22 @@ margin-left: 10vw;
 margin-right: 10vw;
 }
 
-#pact-logo-mobile {
-width: 80vw;
+#pact-logo-mobile-container {
 margin-top: 20vh;
 margin-bottom: 30vh;
+
+}
+
+
+#pact-logo-mobile {
+width: 80vw;
+display: block;
+margin: auto;
+-webkit-transition: all 0.25s;
+-moz-transition: all 0.25s;
+transition: all 0.25s;
+-webkit-transform: translateZ(-1);
+transform: translateZ(-1);
 }
 
 body {
@@ -519,23 +531,17 @@ transition: all 0.25s;
 
 
 #who-we-are-article img {
-    width: 80vw;
-    display: block;
-
+width: 80vw;
+display: block;
 margin: auto;
-
 -webkit-transition: all 0.25s;
 -moz-transition: all 0.25s;
 transition: all 0.25s;
+-webkit-transform: translateZ(-1);
+transform: translateZ(-1);
 }
 
-/*.mobile-profile-picture-minimized {
-position: relative;
-z-index:-99;
-display: block;
-width: 60vw;
-}
-*/
+
 
 
 

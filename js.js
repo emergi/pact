@@ -144,7 +144,7 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
     Stickyfill.add(stickyElements[i]);
 }
 
-
+var shrinkLogo = 200;
 var shrinkPaul = 7580;
 var shrinkJan	= 9080;
 var shrinkKeith = 10580;
@@ -152,10 +152,41 @@ var shrinkJerry = 12160;
 var endProfile = 13660;
 
 
+var logo = document.getElementById("pact-logo-mobile");
 var paul = document.getElementById("mobile-profile-picture-paul");
 var jan = document.getElementById("mobile-profile-picture-jan");
 var keith = document.getElementById("mobile-profile-picture-keith");
 var jerry = document.getElementById("mobile-profile-picture-jerry");
+
+
+window.onscroll = function(e) {
+    if(window.scrollY) {
+
+       	if(window.pageYOffset > shrinkLogo && window.pageYOffset < 1000) {
+       		logo.style.width = ("50vw");
+	    } 
+
+       	if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
+       		paul.style.width = ("60vw");
+	    } 
+        if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
+			jan.style.width = ("60vw");
+		} 
+        if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
+			keith.style.width = ("60vw");
+		} 
+        if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
+			jerry.style.width = ("60vw");
+		} 
+        else {
+            return;
+        }
+    }
+}
+
+
+
+
 
 // window.onscroll = function(e) {
 //     if(window.scrollY) {
@@ -182,25 +213,7 @@ var jerry = document.getElementById("mobile-profile-picture-jerry");
 
 
 
-window.onscroll = function(e) {
-    if(window.scrollY) {
-       	if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-       		paul.style.width = ("60vw");
-	    } 
-        if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
-			jan.style.width = ("60vw");
-		} 
-        if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
-			keith.style.width = ("60vw");
-		} 
-        if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
-			jerry.style.width = ("60vw");
-		} 
-        else {
-            return;
-        }
-    }
-}
+
 
 
 
