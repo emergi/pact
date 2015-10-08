@@ -154,10 +154,10 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 
 
 var shrinkLogo = 150;
-var shrinkPaul = 6780;
-var shrinkJan	= 8180;
-var shrinkKeith = 9580;
-var shrinkJerry = 10980;
+var shrinkPaul = 6750;
+var shrinkJan	= 8150;
+var shrinkKeith = 9550;
+var shrinkJerry = 10950;
 var endProfile = 12660;
 
 

@@ -403,9 +403,9 @@ margin-bottom: 30vh;
 width: 80vw;
 display: block;
 margin: auto;
--webkit-transition: all 0.25s;
--moz-transition: all 0.25s;
-transition: all 0.25s;
+-webkit-transition: all 0.25s ease;
+-moz-transition: all 0.25s ease;
+transition: all 0.25s ease;
 -webkit-transform: translateZ(-1);
 transform: translateZ(-1);
 }
@@ -534,9 +534,9 @@ transition: all 0.25s;
 width: 80vw;
 display: block;
 margin: auto;
--webkit-transition: all 0.25s;
--moz-transition: all 0.25s;
-transition: all 0.25s;
+-webkit-transition: all 0.25s ease;
+-moz-transition: all 0.25s ease;
+transition: all 0.25s ease;
 -webkit-transform: translateZ(-1);
 transform: translateZ(-1);
 }
