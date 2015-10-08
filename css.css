@@ -495,12 +495,17 @@ width: 10vw;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
+    -webkit-transform: translate3d(0, 0, 0);
     width: 80vw;
     text-align:center;
     margin: 0 auto;
 }
 
 .mobile-profile-picture-minimized {
+-webkit-transition: all 0.25s;
+-moz-transition: all 0.25s;
+transition: all 0.25s;
+-webkit-transform: translate3d(0, 0, 0);
 display: block;
 width: 60vw!important;
 }
