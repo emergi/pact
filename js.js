@@ -142,11 +142,11 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 }
 
 
-var shrinkPaul = 7000;
-var shrinkJan	= 7200;
-var shrinkKeith = 9500;
-var shrinkJerry = 11500;
-var endProfile = 13500;
+var shrinkPaul = 7580;
+var shrinkJan	= 9080;
+var shrinkKeith = 10580;
+var shrinkJerry = 12160;
+var endProfile = 13660;
 
 
 var paul = document.getElementById("mobile-profile-picture-paul");
@@ -154,24 +154,19 @@ var jan = document.getElementById("mobile-profile-picture-jan");
 var keith = document.getElementById("mobile-profile-picture-keith");
 var jerry = document.getElementById("mobile-profile-picture-jerry");
 
-
 window.onscroll = function(e) {
     if(window.scrollY) {
         if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-            paul.style.width = "50vw";
-            console.log("found paul!");
+            paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
         } 
         if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
-            jan.style.width = "50vw";
-            console.log("found jan!");
+            jan.classList ? jan.classList.add('mobile-profile-picture-minimized') : jan.className += ' mobile-profile-picture-minimized';
         } 
         if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
-            keith.style.width = "50vw";
-            console.log("found Keith!");
+            keith.classList ? keith.classList.add('mobile-profile-picture-minimized') : keith.className += ' mobile-profile-picture-minimized';
         } 
         if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
-            jerry.style.width = "50vw";
-            console.log("found Jerry!");
+            jerry.classList ? jerry.classList.add('mobile-profile-picture-minimized') : jerry.className += ' mobile-profile-picture-minimized';
         } 
         else {
             return;

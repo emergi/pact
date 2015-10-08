@@ -382,7 +382,6 @@ height: 255px;
 html {
 background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
 max-width: 800px;
-height: 20000px;
 -webkit-overflow-scrolling: touch;
 }
 
@@ -399,17 +398,16 @@ margin-top: 20vh;
 margin-bottom: 30vh;
 }
 
-article {
-width: 100%;
+body {
+height: 100%;
 }
-
-
 
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    
 }
 
 .sticky:before,
@@ -439,6 +437,7 @@ line-height: 2.5rem;
 margin-bottom: 5vh;
 }
 
+
 strong {
 font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
 font-size: 2rem;
@@ -447,93 +446,46 @@ margin-bottom: 3vh;
 }
 
 
-#what-is-pact-strong {
-margin-bottom: 10vh;
+p, strong, header {
+text-align:center;
 }
 
 
-
-
-#what-we-do-article {
+#what-is-pact-strong,
+#what-we-do-article,
+#what-is-pact-article,
+#who-we-are-article,
+#who-we-are-header,
+#why-pact-header,
+#why-pact-strong-list,
+#contact-us-header {
 margin-bottom: 50vh;
 }
 
-
-.end-of-sub-article{
+#mobile-profile-picture-paul,
+#mobile-profile-picture-jan,
+#mobile-profile-picture-keith,
+#mobile-profile-picture-jerry, 
+.what-we-do-end, 
+.mobile-contact-buttons {
 margin-bottom: 20vh;
 }
 
-.article-contents {
+
+#what-we-do-strong,
+#why-pact-article,
+#contact-us-article {
 margin-top: 50vh;
-margin-bottom: 20vh;
 }
-
 
 .mobile-contact-buttons {
-width: 100%;
-text-align:center;
-margin-top: -5vh;
-margin-left: 26vw;
+text-align: center;
 }
 
-
-a .iconsContact{
+a .contact-icons-mobile{
 padding-right: 2vw;
-width: 8vw;
+width: 10vw;
 }
-
-
-.sticky-profile {
-margin-top: 30vh;
-
-}
-
-#why-pact,
-#bold-list {
-margin-top: 50vh;
-}
-
-
-#bold-list{
-text-align: left;
-}
-
-.left-align{
-    float: left;
-text-align: left;
-max-width: 50vw;
-}
-
-
-.right-align{
-    float: right;
-text-align: right;
-max-width: 50vw;
-}
-
-#why-pact-header {
-margin-top: 50vh;
-}
-
-
-#contact-us {
-    margin-top: 1000px;
-}
-
-#contact-us-header{
-    margin-top: 1000px;
-}
-
-
-.home .main {
-display:none;
-}
-
-
-.logo, .bgimgs {
-display:none;
-}
- 
 
 
 #mobile-profile-picture-paul,
@@ -548,12 +500,47 @@ display:none;
     margin: 0 auto;
 }
 
-
+.mobile-profile-picture-minimized {
+display: block;
+width: 60vw!important;
 }
 
 
 
 
+#why-pact-strong-list,
+.why-pact-left-align {
+text-align: left;
+width: 80vw;
+}
+
+.why-pact-strong{
+margin-top: 10vh;
+}
+
+.why-pact-right-align {
+text-align: right;
+}
 
 
+#contact-us-map {
+margin-left:13vw;
+width: 50vw;
+margin-bottom: 10vh;
+margin-top: 10vh;
+}
 
+.mobile-contact-buttons-last {
+
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.home .main {
+display:none;
+}
+
+.logo, .bgimgs {
+display:none;
+}
+}
