@@ -404,9 +404,9 @@ margin-bottom: 30vh;
 width: 80vw;
 display: block;
 margin: auto;
--webkit-transition: all 0.30s ease-out;
--moz-transition: all 0.30s ease-out;
-transition: all 0.30s ease-out;
+-webkit-transition: all 0.30s linear;
+-moz-transition: all 0.30s linear;
+transition: all 0.30s linear;
 -webkit-transform: translateZ(-1);
 transform: translateZ(-1);
 }
@@ -535,15 +535,12 @@ transition: all 0.25s;
 width: 80vw;
 display: block;
 margin: auto;
--webkit-transition: all 0.25s ease-out;
--moz-transition: all 0.25s ease-out;
-transition: all 0.25s ease-out;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 -webkit-transform: translateZ(-1);
 transform: translateZ(-1);
 }
-
-
-
 
 
 #why-pact-strong-list,

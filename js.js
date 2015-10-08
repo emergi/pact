@@ -157,7 +157,7 @@ var shrinkLogo = 150;
 var shrinkPaul = 6900;
 var shrinkJan	= 8300;
 var shrinkKeith = 9700;
-var shrinkJerry = 11100;
+var shrinkJerry = 11050;
 var endProfile = 12660;
 
 
