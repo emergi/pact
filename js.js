@@ -26,6 +26,9 @@ $(function() {
 
 $(function() {
 
+
+
+
 	$("#paulDetail").click(function() {
 		$("#paulInfo").fadeIn();
 	});
@@ -154,24 +157,75 @@ var jan = document.getElementById("mobile-profile-picture-jan");
 var keith = document.getElementById("mobile-profile-picture-keith");
 var jerry = document.getElementById("mobile-profile-picture-jerry");
 
+// window.onscroll = function(e) {
+//     if(window.scrollY) {
+//        if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
+//             paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
+//         } 
+//         if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
+//             paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
+//         } 
+//         if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
+//             jan.classList ? jan.classList.add('mobile-profile-picture-minimized') : jan.className += ' mobile-profile-picture-minimized';
+//         } 
+//         if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
+//             keith.classList ? keith.classList.add('mobile-profile-picture-minimized') : keith.className += ' mobile-profile-picture-minimized';
+//         } 
+//         if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
+//             jerry.classList ? jerry.classList.add('mobile-profile-picture-minimized') : jerry.className += ' mobile-profile-picture-minimized';
+//         } 
+//         else {
+//             return;
+//         }
+//     }
+// }
+
+
+
 window.onscroll = function(e) {
     if(window.scrollY) {
-        if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-            paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
-        } 
+       	if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
+       		paul.style.width = ("60vw");
+	    } 
         if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
-            jan.classList ? jan.classList.add('mobile-profile-picture-minimized') : jan.className += ' mobile-profile-picture-minimized';
-        } 
+			jan.style.width = ("60vw");
+		} 
         if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
-            keith.classList ? keith.classList.add('mobile-profile-picture-minimized') : keith.className += ' mobile-profile-picture-minimized';
-        } 
+			keith.style.width = ("60vw");
+		} 
         if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
-            jerry.classList ? jerry.classList.add('mobile-profile-picture-minimized') : jerry.className += ' mobile-profile-picture-minimized';
-        } 
+			jerry.style.width = ("60vw");
+		} 
         else {
             return;
         }
     }
 }
+
+
+
+
+
+
+
+// window.onscroll = function () { 
+
+// function isScrolledIntoView( paul ) {
+//     var elementTop    = paul.getBoundingClientRect().top,
+//         elementBottom = paul.getBoundingClientRect().bottom;
+
+//     return elementTop >= 0 && elementBottom <= window.innerHeight;
+//     console.log("found paul!")
+// }
+// console.log(isScrolledIntoView);
+// }
+
+
+
+
+
+
+
+
 
 };
