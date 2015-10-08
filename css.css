@@ -400,12 +400,13 @@ margin-bottom: 30vh;
 
 
 #pact-logo-mobile {
+    top:0;
 width: 80vw;
 display: block;
 margin: auto;
--webkit-transition: all 0.25s ease-out;
--moz-transition: all 0.25s ease-out;
-transition: all 0.25s ease-out;
+-webkit-transition: all 0.30s ease-out;
+-moz-transition: all 0.30s ease-out;
+transition: all 0.30s ease-out;
 -webkit-transform: translateZ(-1);
 transform: translateZ(-1);
 }
