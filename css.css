@@ -552,7 +552,7 @@ margin-top:-5rem;
 #who-we-are svg,
 #contact-us svg {
 padding-right: 2vw;
-width: 6vw;
+width: 8vw;
 }
 
 #contact-us img {
@@ -598,8 +598,14 @@ and (max-device-width : 736px)
 and (-webkit-min-device-pixel-ratio: 2) { 
 
 html {
-font-size: 16px;
+font-size: 20px;
 }
+
+#who-we-are p {
+
+max-width: 80vw;
+}
+
 
 }
 
