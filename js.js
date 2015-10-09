@@ -10,9 +10,9 @@ jQuery.extend( jQuery.easing,
 });
 
 
-// UNDER 800PX SWITCHES TO MOBILE SITE
+// UNDER 768PX SWITCHES TO MOBILE SITE
 
-var minWidth = 800;
+var minWidth = 768;
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
@@ -154,7 +154,7 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
 
 
 var shrinkLogo = 150;
-var shrinkPaul = 6900;
+var shrinkPaul = 7550;
 var shrinkJan	= 8300;
 var shrinkKeith = 9700;
 var shrinkJerry = 11050;
@@ -171,22 +171,21 @@ var jerry = document.getElementById("mobile-profile-picture-jerry");
 window.onscroll = function(e) {
     if(window.scrollY) {
 
-       	if(window.pageYOffset > shrinkLogo && window.pageYOffset < 1000) {
-       		logo.style.width = ("50vw");
-	    } 
-
-       	if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-       		paul.style.width = ("60vw");
-	    } 
-        if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
-			jan.style.width = ("60vw");
-		} 
-        if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
-			keith.style.width = ("60vw");
-		} 
-        if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
-			jerry.style.width = ("60vw");
-		} 
+       	if(window.pageYOffset > shrinkLogo) {
+       		logo.style.width = ("20vw");
+	    }
+       	if(window.pageYOffset > shrinkPaul) {
+       		paul.style.width = ("40vw");
+	    }
+        if(window.pageYOffset > shrinkJan) {
+			jan.style.width = ("40vw");
+		}
+        if(window.pageYOffset > shrinkKeith) {
+			keith.style.width = ("40vw");
+		}
+        if(window.pageYOffset > shrinkJerry) {
+			jerry.style.width = ("40vw");
+		}
         else {
             return;
         }

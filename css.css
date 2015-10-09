@@ -15,7 +15,7 @@ vertical-align:baseline
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block
 }
- 
+
 html {
 font-size:16px;
 background-image:url(./img/background.jpg);
@@ -61,7 +61,7 @@ width:80vw!important;
 
 /*.section picture {
 
- width: 800px!important;
+width: 800px!important;
 }
 
 .test {
@@ -97,9 +97,9 @@ text-indent:-9999px;
 }
 
 #what-is-pact-1, #what-is-pact-2 {
-    -webkit-image-rendering: crisp-edges;
-    width: 100vw;
-    height: 100vh;
+-webkit-image-rendering: crisp-edges;
+width: 100vw;
+height: 100vh;
 }
 */
 
@@ -159,13 +159,13 @@ width: 100%;
 }*/
 
 .profilePicture, .overlayText{
-    
+
 
 }
 
 .overlayContentWrap {
 
-    margin-top:20vh;
+margin-top:20vh;
 }
 
 .profilePicture {
@@ -174,33 +174,33 @@ margin-right: 5vw;
 }
 
 .profilePicture, .overlayText, .iconsContact {
-    float:left;
+float:left;
 }
 
 
 .profileName {
-    width: 100%;
-    display: inline-block;
-    font-size: 2rem;
-    font-family: Helvetica Neue;
-    font-weight: bold;
-    margin-bottom: 2rem;
+width: 100%;
+display: inline-block;
+font-size: 2rem;
+font-family: Helvetica Neue;
+font-weight: bold;
+margin-bottom: 2rem;
 }
 
 .overlayText {
 
-    width: 30vw;
+width: 30vw;
 }
 
 
 .intro {
-    font-size: 1rem;
-    font-family: Helvetica Neue;
-    font-weight: bold;
+font-size: 1rem;
+font-family: Helvetica Neue;
+font-weight: bold;
 }
 
 .story {
-    margin-top: 10vh;
+margin-top: 10vh;
 }
 
 
@@ -245,7 +245,7 @@ text-align: center;
 font-size: 25px;
 padding: 15px 10 5px 15px;
 cursor: pointer;
-  
+
 }
 
 
@@ -359,13 +359,32 @@ height: 255px;
 }
 
 
+@media and
+(min-width: 1024) and
+(max-width: 1024px) {
+
+.home .main {
+width: 10000px;
+}
+
+.section {
+width: 1100px;
+background-color: yellow;
+}
 
 
+#maskButtons{
+margin-left:190px;
+}
 
 
-
-
-
+.btnClick {
+margin-top:225px;
+margin-left: 16px;
+width: 155px;
+height: 255px;
+}
+}
 
 
 
@@ -376,162 +395,142 @@ height: 255px;
 
 
 
+/*          TABLETS        */
 
-@media (max-width: 799px) {
+
+@media only screen and
+(max-device-width : 1024px) {
+
 
 html {
+font-size: 14px;
 background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
-max-width: 800px;
 -webkit-overflow-scrolling: touch;
 }
 
+body {
+width: 100%;
+}
+
 #mobile{
-margin: 0;
-display: block;
 margin-left: 10vw;
 margin-right: 10vw;
-}
-
-#pact-logo-mobile-container {
-margin-top: 20vh;
-margin-bottom: 30vh;
-
-}
-
-
-#pact-logo-mobile {
-    top:0;
-width: 80vw;
 display: block;
-margin: auto;
--webkit-transition: all 0.2s ease-in;
--moz-transition: all 0.2s ease-in;
-transition: all 0.2s ease-in;
--webkit-transform: translateZ(-1);
-transform: translateZ(-1);
 }
-
-body {
-height: 100%;
-}
-
 
 .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    
+position: -webkit-sticky;
+position: sticky;
+top: 0; 
 }
 
 .sticky:before,
 .sticky:after {
-    content: '';
-    display: table; 
+content: '';
+display: table; 
 }
 
-header{
-  text-align: center;  
+#logo-mobile {
+margin-top:20rem;
+margin-bottom: 50rem;
 }
 
-
-strong, p {
+#logo-mobile img {
+width: 50vw;
 display: block;
-}
-
-header {
-font-family: ImpactWGL, Helvetica Neue, sans-serif;
-font-size: 14vw;
-}
-
-p {
-font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
-font-size: 2rem;
-line-height: 2.5rem;
-margin-bottom: 5vh;
-}
-
-
-strong {
-font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
-font-size: 2rem;
-margin-top: 5vh;
-margin-bottom: 3vh;
-}
-
-
-p, strong, header {
-text-align:center;
-}
-
-
-#what-is-pact-strong,
-#what-we-do-article,
-#what-is-pact-article,
-#who-we-are-article,
-#who-we-are-header,
-#why-pact-header,
-#why-pact-strong-list,
-#contact-us-header {
-margin-bottom: 50vh;
-}
-
-/*#mobile-profile-picture-paul,
-#mobile-profile-picture-jan,
-#mobile-profile-picture-keith,
-#mobile-profile-picture-jerry, */
-.what-we-do-end, 
-.mobile-contact-buttons {
-margin-bottom: 20vh;
-}
-
-
-#what-we-do-strong,
-#why-pact-article,
-#contact-us-article {
-margin-top: 50vh;
-}
-
-.mobile-contact-buttons {
-text-align: center;
-}
-
-a .contact-icons-mobile{
-padding-right: 2vw;
-width: 10vw;
-}
-
-/*#pact-logo-mobile,
-#mobile-profile-picture-paul,
-#mobile-profile-picture-jan,
-#mobile-profile-picture-keith,
-#mobile-profile-picture-jerry {
-width: 80vw;
-text-align:center;
 margin: auto;
-
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
--webkit-perspective: 1000;
-perspective: 1000;
-
--webkit-transition: all 0.25s;
--moz-transition: all 0.25s;
-transition: all 0.25s;
-}
-*/
-
-
-
-
-#pact-logo-mobile,
-#mobile-profile-picture-paul,
-#mobile-profile-picture-jan,
-#mobile-profile-picture-keith,
-#mobile-profile-picture-jerry {
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+-webkit-transform: translateZ(-1);
+transform: translateZ(-1); 
 }
 
+#what-is-pact,
+#what-we-do,
+#who-we-are,
+#why-pact,
+#contact-us {
+margin-top: 50rem;
+margin-bottom: 50rem;
+}
 
-#who-we-are-article img {
+#what-is-pact header,
+#what-we-do header,
+#who-we-are header,
+#why-pact header,
+#contact-us header { 
+padding-top: 2rem;
+margin-bottom: 50rem;
+text-align:center;
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+text-align: center; 
+font-size: 4rem;
+}
+
+#what-is-pact article,
+#what-we-do article,
+#who-we-are article,
+#contact-us article { 
+margin-top: 30rem;
+margin-bottom: 10rem;
+text-align:center;
+}
+
+#why-pact article {
+margin-top: 30rem;
+margin-bottom: 10rem;
+}
+
+#what-is-pact article strong,
+#what-we-do article strong,
+#who-we-are article strong,
+#why-pact article strong {
+margin-bottom: 2.5rem;
+display: block;
+font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+font-size: 1.8rem;
+}
+
+#what-is-pact article p,
+#what-we-do article p,
+#who-we-are article p,
+#why-pact article p,
+#contact-us article p { 
+margin-bottom: 5rem;
+display: block;
+font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+font-size: 1.4rem;
+line-height: 2.2rem;
+}
+
+#who-we-are p {
+margin: 0 auto;
+max-width: 60vw;
+}
+
+#who-we-are article img {
+margin-bottom: 2.5rem;
+}
+
+#who-we-are button,
+#contact-us button {
+background: none;
+border: 0;
+margin-top:-5rem;
+}
+
+#who-we-are svg,
+#contact-us svg {
+padding-right: 2vw;
+width: 6vw;
+}
+
+#contact-us img {
+width: 80vw;
+}
+
+#who-we-are img {
 width: 80vw;
 display: block;
 margin: auto;
@@ -542,35 +541,16 @@ transition: all 0.2s ease-in;
 transform: translateZ(-1);
 }
 
-
-#why-pact-strong-list,
-.why-pact-left-align {
-text-align: left;
-width: 80vw;
-}
-
-
-.why-pact-strong{
-margin-top: 10vh;
-}
-
-
-.why-pact-right-align {
+#right-align-text strong,
+#right-align-text p {
 text-align: right;
 }
 
-
-#contact-us-map {
-margin-left:13vw;
-width: 50vw;
-margin-bottom: 10vh;
-margin-top: 10vh;
+#left-align-text strong,
+#left-align-text p {
+text-align: left;
 }
 
-.mobile-contact-buttons-last {
-    text-align: center;
-    margin-bottom: 5vh;
-}
 
 .home .main {
 display:none;
@@ -580,3 +560,168 @@ display:none;
 display:none;
 }
 }
+
+@media only screen and
+(max-device-width : 375px) {
+
+
+html {
+font-size: 12px;
+background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
+-webkit-overflow-scrolling: touch;
+}
+
+body {
+width: 100%;
+}
+
+#mobile{
+
+display: block;
+}
+
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0; 
+}
+
+.sticky:before,
+.sticky:after {
+content: '';
+display: table; 
+}
+
+#logo-mobile {
+margin-top:20rem;
+margin-bottom: 50rem;
+}
+
+#logo-mobile img {
+width: 50vw;
+display: block;
+margin: auto;
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+-webkit-transform: translateZ(-1);
+transform: translateZ(-1); 
+}
+
+#what-is-pact,
+#what-we-do,
+#who-we-are,
+#why-pact,
+#contact-us {
+margin-top: 50rem;
+margin-bottom: 50rem;
+}
+
+#what-is-pact header,
+#what-we-do header,
+#who-we-are header,
+#why-pact header,
+#contact-us header { 
+padding-top: 2rem;
+margin-bottom: 50rem;
+text-align:center;
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+text-align: center; 
+font-size: 4rem;
+}
+
+#what-is-pact article,
+#what-we-do article,
+#who-we-are article,
+#contact-us article { 
+margin-top: 30rem;
+margin-bottom: 10rem;
+text-align:center;
+}
+
+#why-pact article {
+margin-top: 30rem;
+margin-bottom: 10rem;
+}
+
+#what-is-pact article strong,
+#what-we-do article strong,
+#who-we-are article strong,
+#why-pact article strong {
+margin-bottom: 2.5rem;
+display: block;
+font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+font-size: 1.8rem;
+}
+
+#what-is-pact article p,
+#what-we-do article p,
+#who-we-are article p,
+#why-pact article p,
+#contact-us article p { 
+margin-bottom: 5rem;
+display: block;
+font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+font-size: 1.4rem;
+line-height: 2.2rem;
+}
+
+#who-we-are p {
+margin: 0 auto;
+max-width: 80vw;
+}
+
+#who-we-are article img {
+margin-bottom: 2.5rem;
+}
+
+#who-we-are button,
+#contact-us button {
+background: none;
+border: 0;
+margin-top:-5rem;
+}
+
+#who-we-are svg,
+#contact-us svg {
+padding-right: 2vw;
+width: 6vw;
+}
+
+#contact-us img {
+width: 20rem;
+}
+
+#who-we-are img {
+width: 80vw;
+display: block;
+margin: auto;
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+-webkit-transform: translateZ(-1);
+transform: translateZ(-1);
+}
+
+#right-align-text strong,
+#right-align-text p {
+text-align: right;
+}
+
+#left-align-text strong,
+#left-align-text p {
+text-align: left;
+}
+
+
+.home .main {
+display:none;
+}
+
+.logo, .bgimgs {
+display:none;
+}
+
+}
+
+
