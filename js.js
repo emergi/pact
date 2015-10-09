@@ -137,29 +137,11 @@ else {
 
 console.log(pageYOffset);
 
-
 var stickyElements = document.getElementsByClassName('sticky');
 
 for (var i = stickyElements.length - 1; i >= 0; i--) {
     Stickyfill.add(stickyElements[i]);
 }
-
-
-// var shrinkLogo = 200;
-// var shrinkPaul = 7580;
-// var shrinkJan	= 9080;
-// var shrinkKeith = 10580;
-// var shrinkJerry = 12160;
-// var endProfile = 13660;
-
-
-var shrinkLogo = 150;
-var shrinkPaul = 7550;
-var shrinkJan	= 8300;
-var shrinkKeith = 9700;
-var shrinkJerry = 11050;
-var endProfile = 12660;
-
 
 var logo = document.getElementById("pact-logo-mobile");
 var paul = document.getElementById("mobile-profile-picture-paul");
@@ -167,86 +149,29 @@ var jan = document.getElementById("mobile-profile-picture-jan");
 var keith = document.getElementById("mobile-profile-picture-keith");
 var jerry = document.getElementById("mobile-profile-picture-jerry");
 
+withinviewport.defaults.sides = 'bottom';
+withinviewport(paul, jan, keith, jerry);
 
 window.onscroll = function(e) {
-    if(window.scrollY) {
 
-       	if(window.pageYOffset > shrinkLogo) {
-       		logo.style.width = ("20vw");
-	    }
-       	if(window.pageYOffset > shrinkPaul) {
-       		paul.style.width = ("40vw");
-	    }
-        if(window.pageYOffset > shrinkJan) {
-			jan.style.width = ("40vw");
-		}
-        if(window.pageYOffset > shrinkKeith) {
-			keith.style.width = ("40vw");
-		}
-        if(window.pageYOffset > shrinkJerry) {
-			jerry.style.width = ("40vw");
-		}
-        else {
-            return;
-        }
-    }
+if ( withinviewport(logo) ) {
+	logo.style.width = ("20vw");
 }
 
+if ( withinviewport(paul) ) {
+	paul.style.width = ("40vw");
+}
 
+if ( withinviewport(jan) ) {
+	jan.style.width = ("40vw");
+}
 
+if ( withinviewport(keith) ) {
+	keith.style.width = ("40vw");
+}
 
-
-// window.onscroll = function(e) {
-//     if(window.scrollY) {
-//        if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-//             paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
-//         } 
-//         if(window.pageYOffset > shrinkPaul && window.pageYOffset < shrinkJan) {
-//             paul.classList ? paul.classList.add('mobile-profile-picture-minimized') : paul.className += ' mobile-profile-picture-minimized';
-//         } 
-//         if(window.pageYOffset > shrinkJan && window.pageYOffset < shrinkKeith) {
-//             jan.classList ? jan.classList.add('mobile-profile-picture-minimized') : jan.className += ' mobile-profile-picture-minimized';
-//         } 
-//         if(window.pageYOffset > shrinkKeith && window.pageYOffset < shrinkJerry) {
-//             keith.classList ? keith.classList.add('mobile-profile-picture-minimized') : keith.className += ' mobile-profile-picture-minimized';
-//         } 
-//         if(window.pageYOffset > shrinkJerry && window.pageYOffset < endProfile) {
-//             jerry.classList ? jerry.classList.add('mobile-profile-picture-minimized') : jerry.className += ' mobile-profile-picture-minimized';
-//         } 
-//         else {
-//             return;
-//         }
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// window.onscroll = function () { 
-
-// function isScrolledIntoView( paul ) {
-//     var elementTop    = paul.getBoundingClientRect().top,
-//         elementBottom = paul.getBoundingClientRect().bottom;
-
-//     return elementTop >= 0 && elementBottom <= window.innerHeight;
-//     console.log("found paul!")
-// }
-// console.log(isScrolledIntoView);
-// }
-
-
-
-
-
-
-
-
-
+if ( withinviewport(jerry) ) {
+	jerry.style.width = ("40vw");
+}
+}
 };

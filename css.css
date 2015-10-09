@@ -398,8 +398,17 @@ height: 255px;
 /*          TABLETS        */
 
 
-@media only screen and
-(max-device-width : 1024px) {
+
+/*          IPAD        */
+
+@media only screen 
+
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-min-device-pixel-ratio: 1) { 
+
+/*@media only screen and
+(max-device-width : 1024px) {*/
 
 
 html {
@@ -430,12 +439,10 @@ content: '';
 display: table; 
 }
 
-#logo-mobile {
-margin-top:20rem;
-margin-bottom: 50rem;
-}
+
 
 #logo-mobile img {
+padding-top:20rem;
 width: 50vw;
 display: block;
 margin: auto;
@@ -446,7 +453,24 @@ transition: all 0.2s ease-in;
 transform: translateZ(-1); 
 }
 
-#what-is-pact,
+
+#what-is-pact {
+margin-top: 25rem;
+}
+#what-is-pact header {
+text-align:center;
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+text-align: center; 
+font-size: 4rem;
+}
+
+#what-is-pact article {
+margin-top: 5rem;
+margin-bottom: 50rem;
+text-align:center; 
+}
+
+
 #what-we-do,
 #who-we-are,
 #why-pact,
@@ -455,7 +479,7 @@ margin-top: 50rem;
 margin-bottom: 50rem;
 }
 
-#what-is-pact header,
+
 #what-we-do header,
 #who-we-are header,
 #why-pact header,
@@ -468,7 +492,7 @@ text-align: center;
 font-size: 4rem;
 }
 
-#what-is-pact article,
+
 #what-we-do article,
 #who-we-are article,
 #contact-us article { 
@@ -502,6 +526,15 @@ display: block;
 font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
 font-size: 1.4rem;
 line-height: 2.2rem;
+}
+
+#who-we-are article img {
+width: 70vw;
+padding-bottom: 8rem;
+}
+
+#who-we-are article strong {
+margin-top: -5.5rem;
 }
 
 #who-we-are p {
@@ -509,10 +542,6 @@ margin: 0 auto;
 max-width: 60vw;
 }
 
-#who-we-are article img {
-margin-bottom: 2.5rem;
-}
-
 #who-we-are button,
 #contact-us button {
 background: none;
@@ -561,159 +590,81 @@ display:none;
 }
 }
 
-@media only screen and
-(max-device-width : 375px) {
+/*          MOBILE     */
+
+
+@media only screen 
+and (max-device-width : 736px)
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+html {
+font-size: 16px;
+}
+
+}
+
+
+
+
+/*          IPHONE 6        */
+
+
+/*@media only screen 
+and (max-device-width : 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+html {
+font-size: 16px;
+}
+
+
+body {
+ 
+}
+
+ }*/
+
+
+
+
+
+/*          IPHONE 5        */
+
+
+
+
+/*@media only screen
+and (min-device-width : 568px) 
+and (-webkit-min-device-pixel-ratio: 2){
 
 
 html {
-font-size: 12px;
-background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
--webkit-overflow-scrolling: touch;
+font-size: 18px;
 }
 
 body {
-width: 100%;
+    background-color: green;
 }
 
-#mobile{
+}*/
 
-display: block;
+
+
+
+/*          IPHONE 4        */
+
+/*@media only screen
+and (max-device-width : 480px)
+and (min-device-width : 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+html {
+font-size: 20px;
 }
 
-.sticky {
-position: -webkit-sticky;
-position: sticky;
-top: 0; 
+body {
+background-color: black;
 }
-
-.sticky:before,
-.sticky:after {
-content: '';
-display: table; 
-}
-
-#logo-mobile {
-margin-top:20rem;
-margin-bottom: 50rem;
-}
-
-#logo-mobile img {
-width: 50vw;
-display: block;
-margin: auto;
--webkit-transition: all 0.2s ease-in;
--moz-transition: all 0.2s ease-in;
-transition: all 0.2s ease-in;
--webkit-transform: translateZ(-1);
-transform: translateZ(-1); 
-}
-
-#what-is-pact,
-#what-we-do,
-#who-we-are,
-#why-pact,
-#contact-us {
-margin-top: 50rem;
-margin-bottom: 50rem;
-}
-
-#what-is-pact header,
-#what-we-do header,
-#who-we-are header,
-#why-pact header,
-#contact-us header { 
-padding-top: 2rem;
-margin-bottom: 50rem;
-text-align:center;
-font-family: ImpactWGL, Helvetica Neue, sans-serif;
-text-align: center; 
-font-size: 4rem;
-}
-
-#what-is-pact article,
-#what-we-do article,
-#who-we-are article,
-#contact-us article { 
-margin-top: 30rem;
-margin-bottom: 10rem;
-text-align:center;
-}
-
-#why-pact article {
-margin-top: 30rem;
-margin-bottom: 10rem;
-}
-
-#what-is-pact article strong,
-#what-we-do article strong,
-#who-we-are article strong,
-#why-pact article strong {
-margin-bottom: 2.5rem;
-display: block;
-font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
-font-size: 1.8rem;
-}
-
-#what-is-pact article p,
-#what-we-do article p,
-#who-we-are article p,
-#why-pact article p,
-#contact-us article p { 
-margin-bottom: 5rem;
-display: block;
-font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
-font-size: 1.4rem;
-line-height: 2.2rem;
-}
-
-#who-we-are p {
-margin: 0 auto;
-max-width: 80vw;
-}
-
-#who-we-are article img {
-margin-bottom: 2.5rem;
-}
-
-#who-we-are button,
-#contact-us button {
-background: none;
-border: 0;
-margin-top:-5rem;
-}
-
-#who-we-are svg,
-#contact-us svg {
-padding-right: 2vw;
-width: 6vw;
-}
-
-#contact-us img {
-width: 20rem;
-}
-
-#who-we-are img {
-width: 80vw;
-display: block;
-margin: auto;
--webkit-transition: all 0.2s ease-in;
--moz-transition: all 0.2s ease-in;
-transition: all 0.2s ease-in;
--webkit-transform: translateZ(-1);
-transform: translateZ(-1);
-}
-
-#right-align-text strong,
-#right-align-text p {
-text-align: right;
-}
-
-#left-align-text strong,
-#left-align-text p {
-text-align: left;
-}
-
-
 .home .main {
 display:none;
 }
@@ -722,6 +673,7 @@ display:none;
 display:none;
 }
 
-}
+}*/
+
 
 
