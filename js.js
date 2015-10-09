@@ -155,7 +155,7 @@ withinviewport(paul, jan, keith, jerry);
 window.onscroll = function(e) {
 
 if ( withinviewport(logo) ) {
-	logo.style.width = ("20vw");
+	logo.style.width = ("30vw");
 }
 
 if ( withinviewport(paul) ) {
@@ -174,4 +174,9 @@ if ( withinviewport(jerry) ) {
 	jerry.style.width = ("40vw");
 }
 }
+
+
+
+
+
 };
