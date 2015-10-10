@@ -33,103 +33,69 @@ height: 100%;
 display: none;
 }
 
-.bgimgs, .info {
+.home .main {
+display: block;
+height: 100%;
+width: 19800px;
+height: 100%;
+overflow-y:hidden;
+}
+
+.home .section {
+display:inline-block;
+margin: 0 40px;
+}
+
+.section {
+top:0;
+position: relative;
+width: 1600px;
+height: 100%;
+/*background-color: blue;*/
+}
+
+
+.section picture {
 position:absolute;
-z-index:99;
--webkit-user-drag:none;
-
-}
-
-.png, .logo {
-vertical-align: center;
-
-
-}
-
-/*picture img {
-
-width:80vw!important;
-
-}*/
-
-
-
-
-
-
-
-
-/*.section picture {
-
-width: 800px!important;
-}
-
-.test {
-width: 800px!important;
-
-}*/
-
-
-.logo {
-/*width: 80vw;
-margin-top:10vw;
-margin-left:10vw;*/
-}
-
-
-
-/*
-.respimage {
-position:absolute;
-width:100%;
-
-}
-
-.respimage2 {
-position:relative;
-width:100%;
-z-index:99;
+z-index:0;
 -webkit-user-drag:none;
 vertical-align: center;
-padding-bottom:66%;
-background-size:cover;
-text-indent:-9999px;
 }
-
-#what-is-pact-1, #what-is-pact-2 {
--webkit-image-rendering: crisp-edges;
-width: 100vw;
-height: 100vh;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .mask {
 position:absolute;
-z-index:998;
+z-index:1;
+margin: 0 auto;
+margin-top:15.5em;
+margin-left:17.3vw;
 }
+
+.mask article button {
+color: #FFF;
+opacity: 0.8;
+cursor: pointer;
+margin-left: 1.6vw;
+width: 14vw;
+height: 24.5em;
+}
+
+
+#contact-us {
+color: #000;
+opacity: 0.8;
+cursor: pointer;
+
+margin-left: 27vw;
+width: 11vw;
+height: 2.5em;
+margin-top: 3.2em;
+}
+
+
+
+
+
 
 
 
@@ -147,26 +113,96 @@ cursor: url('img/closeCursor.svg') 22 45, default;
 }
 
 
+#paul-profile {
+padding-left: 15vw;
+padding-top: 15vh;
+}
+
+#paul-profile-picture-contact {
+position:relative;
+display: inline;
+float: left;
+/*border: 5px solid blue;*/
+width: 20rem;
+height: 30rem;
+}
+
+#paul-profile-picture-contact picture img {
+position:absolute;
+top: 0;
+left: 0;
+position: relative;
+/*border: 5px solid red;*/
+}
+
+#paul-profile button {
+position:absolute;
+
+vertical-align: top;
+bottom: 0;
+outline: 0; 
+border: 0;
+background: none;
+   /*border: 5px solid green;*/
+}
+
+#paul-profile a svg {
+margin-left: -0.5vw;
+width: 3vw;
+height: 3vw;
+margin-right: 1vw;
+/*border: 5px solid yellow;*/
+}
+
+#paul-profile a svg:hover {
+fill:grey;
+}
+
+#paul-profile article {
+margin-left: 25vw;
+max-width: 44vw;
+}
+
+#paul-profile article header {
+margin-top: -1.6vh;
+margin-bottom: 1vh;
+font-family: ImpactWGL, Helvetica Neue, sans-serif;
+font-size: 3.8vw;
+letter-spacing: 0.1vw;
+}
+
+
+#paul-profile article strong {
+font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+font-size: 1.3vw;
+letter-spacing: 0.01vw;
+}
+
+
+#paul-profile article p {
+margin-bottom: 0.8vh;
+font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+font-size: 1.3vw;
+line-height: 2.25vh;
+letter-spacing: 0.01vw;
+}
 
 
 
 
 
 
-/*.overlay img {
-vertical-align: center;
-width: 100%;
-}*/
 
-.profilePicture, .overlayText{
+
+
+
+
+.overlayText{
 
 
 }
 
-.overlayContentWrap {
 
-margin-top:20vh;
-}
 
 .profilePicture {
 margin-left: 22vw;
@@ -271,40 +307,11 @@ cursor: pointer;
 
 @media (max-width: 2360px) {
 
-.home .main {
-display: block;
-height: 100%;
-width: 19800px;
-height: 100%;
-overflow-y:hidden;
-}
 
-.home .section {
-display:inline-block;
-margin: 0 40px;
-}
 
-.section {
-top:0;
-position: relative;
-width: 1600px;
-height: 100%;
-/*background-color: blue;*/
-}
 
-#maskButtons{
-margin-left:280px;
-}
 
-.btnClick {
-color: #FFF;
-opacity: 0;
-cursor: pointer;
-margin-top:330px;
-margin-left: 20px;
-width: 230px;
-height: 370px;
-}
+
 }
 
 
@@ -319,9 +326,7 @@ width: 1280px;
 /*background-color: red;*/
 }
 
-#maskButtons{
-margin-left:220px;
-}
+
 
 .btnClick {
 margin-top:260px;
@@ -345,9 +350,6 @@ width: 1100px;
 }
 
 
-#maskButtons{
-margin-left:190px;
-}
 
 
 .btnClick {
@@ -373,9 +375,7 @@ background-color: yellow;
 }
 
 
-#maskButtons{
-margin-left:190px;
-}
+
 
 
 .btnClick {
@@ -398,17 +398,8 @@ height: 255px;
 /*          TABLETS        */
 
 
-
-/*          IPAD        */
-
 @media only screen 
-
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (-webkit-min-device-pixel-ratio: 1) { 
-
-/*@media only screen and
-(max-device-width : 1024px) {*/
+and (max-device-width : 1024px) { 
 
 
 html {
@@ -417,17 +408,17 @@ background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABA
 -webkit-overflow-scrolling: touch;
 }
 
-body {
-    
 
+body {
 }
 
-#mobile{
 
+#mobile{
 margin-left: 10vw;
 margin-right: 10vw;
 display: block;
 }
+
 
 .sticky {
 position: -webkit-sticky;
@@ -435,12 +426,12 @@ position: sticky;
 top: 0; 
 }
 
+
 .sticky:before,
 .sticky:after {
 content: '';
 display: table; 
 }
-
 
 
 #logo-mobile img {
@@ -459,12 +450,15 @@ transform: translateZ(-1);
 #what-is-pact {
 margin-top: 25rem;
 }
+
+
 #what-is-pact header {
 text-align:center;
 font-family: ImpactWGL, Helvetica Neue, sans-serif;
 text-align: center; 
 font-size: 4rem;
 }
+
 
 #what-is-pact article {
 margin-top: 5rem;
@@ -609,8 +603,7 @@ display:none;
 
 
 @media only screen 
-and (max-device-width : 736px)
-and (-webkit-min-device-pixel-ratio: 2) { 
+and (max-device-width : 736px) { 
 
 html {
 font-size: 20px;

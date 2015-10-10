@@ -12,7 +12,7 @@ jQuery.extend( jQuery.easing,
 
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
-var minWidth = 768;
+var minWidth = 800;
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
@@ -26,27 +26,24 @@ $(function() {
 
 $(function() {
 
-
-
-
-	$("#paulDetail").click(function() {
-		$("#paulInfo").fadeIn();
+	$("#paul-info").click(function() {
+		$("#paul-profile").fadeIn();
 	});
 
-	$("#jerryDetail").click(function() {
+	$("#jerry-info").click(function() {
 		$("#jerryInfo").fadeIn();
 	});
 
-	$("#janDetail").click(function() {
+	$("#jan-info").click(function() {
 		$("#janInfo").fadeIn();
 	});
 
-	$("#keithDetail").click(function() {
+	$("#keith-info").click(function() {
 		$("#keithInfo").fadeIn();
 	});
 
 	$(".overlay").click(function() {
-		$("#paulInfo, #jerryInfo, #janInfo, #keithInfo").fadeOut();
+		$("#paul-profile, #jerryInfo, #janInfo, #keithInfo").fadeOut();
 	});
 
 });
@@ -174,9 +171,6 @@ if ( withinviewport(jerry) ) {
 	jerry.style.width = ("40vw");
 }
 }
-
-
-
 
 
 };
