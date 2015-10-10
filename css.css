@@ -161,6 +161,7 @@ margin-left: -0.5vw;
 width: 3vw;
 height: 3vw;
 margin-right: 1vw;
+
 /*border: 5px solid yellow;*/
 }
 
@@ -169,6 +170,7 @@ margin-right: 1vw;
 #jerry-profile a svg:hover,
 #keith-profile a svg:hover {
 fill:gray;
+cursor: pointer;
 }
 
 #paul-profile article,
@@ -228,7 +230,7 @@ letter-spacing: 0.01vw;
 
 html {
 font-size: 14px;
-background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
+background-image:url(img/background-mobile.jpg);
 -webkit-overflow-scrolling: touch;
 }
 
