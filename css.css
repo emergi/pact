@@ -637,6 +637,16 @@ margin-right: 5vw;
 }
 
 
+#who-we-are article img {
+width: 80vw;
+padding-bottom: 12rem;
+}
+
+#who-we-are article strong {
+margin-top: -11.5rem;
+}
+
+
 }
 
 
