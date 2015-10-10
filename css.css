@@ -56,6 +56,7 @@ height: 100%;
 
 
 .section picture {
+margin-left: -50px;
 position:absolute;
 z-index:0;
 -webkit-user-drag:none;
@@ -67,37 +68,29 @@ vertical-align: center;
 position:absolute;
 z-index:1;
 margin: 0 auto;
-margin-top:15.5em;
-margin-left:17.3vw;
+margin-top:36vh;
+margin-left:14.2vw;
 }
 
 .mask article button {
 color: #FFF;
-opacity: 0.8;
+opacity: 0;
 cursor: pointer;
 margin-left: 1.6vw;
 width: 14vw;
-height: 24.5em;
+height: 40vh;
 }
 
 
 #contact-us {
 color: #000;
-opacity: 0.8;
+opacity: 0;
 cursor: pointer;
-
 margin-left: 27vw;
 width: 11vw;
-height: 2.5em;
-margin-top: 3.2em;
+height: 5vh;
+margin-top: 4.5vh;
 }
-
-
-
-
-
-
-
 
 .overlay {
 display: none;
@@ -113,40 +106,57 @@ cursor: url('img/closeCursor.svg') 22 45, default;
 }
 
 
-#paul-profile {
+#paul-profile,
+#jan-profile,
+#jerry-profile,
+#keith-profile {
 padding-left: 15vw;
 padding-top: 15vh;
 }
 
-#paul-profile-picture-contact {
+#paul-profile-picture-contact,
+#jan-profile-picture-contact,
+#jerry-profile-picture-contact,
+#keith-profile-picture-contact {
 position:relative;
 display: inline;
 float: left;
 /*border: 5px solid blue;*/
-width: 20rem;
-height: 30rem;
+width: 20vw;
+height: 70vh;
+margin: 0 auto;
 }
 
-#paul-profile-picture-contact picture img {
-position:absolute;
+#paul-profile-picture-contact picture img,
+#jan-profile-picture-contact picture img,
+#jerry-profile-picture-contact picture img,
+#keith-profile-picture-contact picture img {
+
 top: 0;
-left: 0;
-position: relative;
+
+
+width: 20vw;
 /*border: 5px solid red;*/
 }
 
-#paul-profile button {
+#paul-profile button,
+#jan-profile button,
+#jerry-profile button,
+#keith-profile button {
 position:absolute;
-
 vertical-align: top;
 bottom: 0;
 outline: 0; 
 border: 0;
 background: none;
+margin-left: -4vw;
    /*border: 5px solid green;*/
 }
 
-#paul-profile a svg {
+#paul-profile a svg,
+#jan-profile a svg,
+#jerry-profile a svg,
+#keith-profile a svg {
 margin-left: -0.5vw;
 width: 3vw;
 height: 3vw;
@@ -154,16 +164,25 @@ margin-right: 1vw;
 /*border: 5px solid yellow;*/
 }
 
-#paul-profile a svg:hover {
-fill:grey;
+#paul-profile a svg:hover,
+#jan-profile a svg:hover,
+#jerry-profile a svg:hover,
+#keith-profile a svg:hover {
+fill:gray;
 }
 
-#paul-profile article {
+#paul-profile article,
+#jan-profile article,
+#jerry-profile article,
+#keith-profile article {
 margin-left: 25vw;
 max-width: 44vw;
 }
 
-#paul-profile article header {
+#paul-profile article header,
+#jan-profile article header,
+#jerry-profile article header,
+#keith-profile article header {
 margin-top: -1.6vh;
 margin-bottom: 1vh;
 font-family: ImpactWGL, Helvetica Neue, sans-serif;
@@ -172,14 +191,20 @@ letter-spacing: 0.1vw;
 }
 
 
-#paul-profile article strong {
+#paul-profile article strong,
+#jan-profile article strong,
+#jerry-profile article strong,
+#keith-profile article strong {
 font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
 font-size: 1.3vw;
 letter-spacing: 0.01vw;
 }
 
 
-#paul-profile article p {
+#paul-profile article p, 
+#jan-profile article p,
+#jerry-profile article p,
+#keith-profile article p {
 margin-bottom: 0.8vh;
 font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
 font-size: 1.3vw;
@@ -192,214 +217,13 @@ letter-spacing: 0.01vw;
 
 
 
-
-
-
-
-
-.overlayText{
-
-
-}
-
-
-
-.profilePicture {
-margin-left: 22vw;
-margin-right: 5vw;
-}
-
-.profilePicture, .overlayText, .iconsContact {
-float:left;
-}
-
-
-.profileName {
-width: 100%;
-display: inline-block;
-font-size: 2rem;
-font-family: Helvetica Neue;
-font-weight: bold;
-margin-bottom: 2rem;
-}
-
-.overlayText {
-
-width: 30vw;
-}
-
-
-.intro {
-font-size: 1rem;
-font-family: Helvetica Neue;
-font-weight: bold;
-}
-
-.story {
-margin-top: 10vh;
-}
-
-
-
-.iconsContact {
-padding-right: 0.5vw; 
-z-index: 1001;
-width: 20px;
-}
-
-
-
-.icon:hover {
-fill:red;
-}
-
-
-.clsBox {
-position: absolute;
-z-index: 1000;
-font-family: Helvetica Neue;
-background: #0000FF;
-color: #ffffff;
-width: 120px;
-margin-left: 45vw;
-text-align: center;
-font-size: 25px;
-padding: 15px 10 5px 15px;
-cursor: pointer;
-}
-
-
-.email {
-position: absolute;
-z-index: 1000;
-font-family: Helvetica Neue;
-background: #0000FF;
-color: #ffffff;
-width: 120px;
-margin-left: 15vw;
-text-align: center;
-font-size: 25px;
-padding: 15px 10 5px 15px;
-cursor: pointer;
-
-}
-
-
-
-.linkedin {
-position: absolute;
-z-index: 1000;
-font-family: Helvetica Neue;
-background: #0000FF;
-color: #ffffff;
-width: 120px;
-margin-left: 45vw;
-text-align: center;
-font-size: 25px;
-padding: 15px 10 5px 15px;
-cursor: pointer;
-
-}
-
-
-
-
-
-@media (max-width: 2360px) {
-
-
-
-
-
-
-}
-
-
-@media (max-width: 1580px) {
-
-.home .main {
-width: 16880px;
-}
-
-.section {
-width: 1280px;
-/*background-color: red;*/
-}
-
-
-
-.btnClick {
-margin-top:260px;
-margin-left: 20px;
-width: 180px;
-height: 300px;
-}
-}
-
-
-
-@media (max-width: 1200px) {
-
-.home .main {
-width:20000px;
-}
-
-.section {
-width: 1100px;
-/*background-color: yellow;*/
-}
-
-
-
-
-.btnClick {
-margin-top:225px;
-margin-left: 16px;
-width: 155px;
-height: 255px;
-}
-}
-
-
-@media and
-(min-width: 1024) and
-(max-width: 1024px) {
-
-.home .main {
-width: 10000px;
-}
-
-.section {
-width: 1100px;
-background-color: yellow;
-}
-
-
-
-
-
-.btnClick {
-margin-top:225px;
-margin-left: 16px;
-width: 155px;
-height: 255px;
-}
-}
-
-
-
-
-
-
 /*          MOBILE        */
-
 
 
 /*          TABLETS        */
 
 
-@media only screen 
-and (max-device-width : 1024px) { 
+@media (max-width : 1024px)  { 
 
 
 html {
@@ -581,7 +405,7 @@ text-align: right;
 }
 
 article#left-align-text {
-    margin-top:0!important;
+margin-top:0!important;
 }
 
 #left-align-text strong,
@@ -638,15 +462,10 @@ padding-bottom: 12rem;
 #who-we-are article strong {
 margin-top: -11.5rem;
 }
-
-
 }
 
 
-
-
 /*          IPHONE 6        */
-
 
 @media only screen 
 and (max-device-width : 667px)
@@ -656,63 +475,9 @@ html {
 font-size: 16px;
 }
 
-
 body {
 
 }
-
- }
-
-
-
-
-
-/*          IPHONE 5        */
-
-
-
-
-/*@media only screen
-and (min-device-width : 568px) 
-and (-webkit-min-device-pixel-ratio: 2){
-
-
-html {
-font-size: 18px;
 }
-
-body {
-    background-color: green;
-}
-
-}*/
-
-
-
-
-/*          IPHONE 4        */
-
-/*@media only screen
-and (max-device-width : 480px)
-and (min-device-width : 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-html {
-font-size: 20px;
-}
-
-body {
-background-color: black;
-}
-.home .main {
-display:none;
-}
-
-.logo, .bgimgs {
-display:none;
-}
-
-}*/
-
 
 
