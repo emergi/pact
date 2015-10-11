@@ -274,7 +274,7 @@ var parallaxScroll = {
 	},
 	initParallax: function() {
 		var isHomePage = $('body').hasClass('home'),
-			$main = $('div.main');
+			$main = $('#main');
 		
 		if (isHomePage) {
 			$main.width($main.width() + $(window).width() - 10000);

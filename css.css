@@ -29,11 +29,107 @@ body, html {
 height: 100%;
 }
 
-#mobile {
+#mobile,
+#main {
 display: none;
 }
 
-.home .main {
+
+
+#loader-svg {
+    margin-top: 30vh;
+    margin-left: -16.2vw;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 100;
+  animation: dash 5s ease-out;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+#loader {
+position: absolute;
+background-color: white;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100vw;
+height: 100vh;
+-webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+}
+
+#loader svg {
+    width: 43vw;
+    height: 30vh;
+}
+
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+ -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        animation-delay: 3.5s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*
+.fadeIn {
+  -webkit-animation-name: fadeIn ease-out;
+        animation-name: fadeIn ease-out;
+  -webkit-animation-duration: 2.5s;
+        animation-duration: 2.5s;
+       
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home, #main {
 display: block;
 height: 100%;
 width: 19800px;
@@ -118,39 +214,38 @@ padding-top: 15vh;
 #jan-profile-picture-contact,
 #jerry-profile-picture-contact,
 #keith-profile-picture-contact {
-position:relative;
-display: inline;
+display: table-cell;
 float: left;
 /*border: 5px solid blue;*/
-width: 20vw;
-height: 70vh;
-margin: 0 auto;
+
+height: 600px;
+
 }
 
 #paul-profile-picture-contact picture img,
 #jan-profile-picture-contact picture img,
 #jerry-profile-picture-contact picture img,
 #keith-profile-picture-contact picture img {
-
 top: 0;
-
-
-width: 20vw;
+height: auto;
 /*border: 5px solid red;*/
+margin-left: 40px;
+}
+
+
+#contact-information {
+position:absolute;
+vertical-align: bottom;
+margin-top: 480px;
+   /*border: 5px solid green;*/
+
 }
 
 #paul-profile button,
 #jan-profile button,
 #jerry-profile button,
 #keith-profile button {
-position:absolute;
-vertical-align: top;
-bottom: 0;
-outline: 0; 
-border: 0;
-background: none;
-margin-left: -4vw;
-   /*border: 5px solid green;*/
+
 }
 
 #paul-profile a svg,
@@ -179,6 +274,7 @@ cursor: pointer;
 #keith-profile article {
 margin-left: 25vw;
 max-width: 44vw;
+/*border: 10px solid red;*/
 }
 
 #paul-profile article header,
@@ -238,12 +334,36 @@ background-image:url(img/background-mobile.jpg);
 body {
 }
 
+.home, #main {
+    width: initial;
+    overflow-y:scroll;
+}
+
+
+.home #main {
+    display:none;
+  
+}
+
+.logo, .bgimgs {
+    display:none;
+}
+
+#loader, 
+#loader-svg, 
+#loader-svg-asset,
+.fadeOut, 
+.fadeIn  {
+display:none; 
+}
+
 
 #mobile{
 margin-left: 10vw;
 margin-right: 10vw;
 display: block;
 }
+
 
 
 .sticky {
@@ -411,13 +531,7 @@ text-align: left;
 }
 
 
-.home .main {
-display:none;
-}
 
-.logo, .bgimgs {
-display:none;
-}
 }
 
 /*          MOBILE     */
@@ -429,6 +543,8 @@ and (max-device-width : 736px) {
 html {
 font-size: 20px;
 }
+
+
 
 #what-is-pact article p,
 #what-we-do article p,
