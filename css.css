@@ -293,25 +293,20 @@ text-align:center;
 }
 
 
-#what-we-do { 
-
-}
-
 #what-we-do,
 #who-we-are,
 #why-pact,
-#contact-us {
-
-
+#contact-us-mobile {
 margin-top: 25rem;
 margin-bottom: 25rem;
 }
 
 
+
 #what-we-do header,
 #who-we-are header,
 #why-pact header,
-#contact-us header { 
+#contact-us-mobile header { 
 padding-top: 2rem;
 margin-bottom: 25rem;
 text-align:center;
@@ -320,24 +315,18 @@ text-align: center;
 font-size: 4rem;
 }
 
-#who-we-are article {
-margin-top: 10rem;
-margin-bottom: 10rem;
-text-align:center; 
-}
 
 
+#who-we-are article,
+#why-pact article,
 #what-we-do article,
-#contact-us article { 
+#contact-us-mobile article { 
 margin-top: 10rem;
 margin-bottom: 10rem;
 text-align:center;
 }
 
-#why-pact article {
-margin-top: 10rem;
-margin-bottom: 10rem;
-}
+
 
 #what-is-pact article strong,
 #what-we-do article strong,
@@ -353,7 +342,7 @@ font-size: 1.8rem;
 #what-we-do article p,
 #who-we-are article p,
 #why-pact article p,
-#contact-us article p { 
+#contact-us-mobile article p { 
 max-width: 70vw;
 margin-left: 15vw;
 margin-right: 15vw;
@@ -374,19 +363,25 @@ margin-top: -5.5rem;
 }
 
 #who-we-are button,
-#contact-us button {
+#contact-us-mobile button {
 background: none;
 border: 0;
 margin-top:-5rem;
 }
 
-#who-we-are svg,
-#contact-us svg {
+.contact-icons-mobile {
 padding-right: 2vw;
 width: 8vw;
 }
 
-#contact-us img {
+
+#contact-us-mobile-map {
+    /*margin-left: -3rem;*/
+    width: 35rem;
+    height: 35rem;
+}
+
+#contact-us-mobile img {
 width: 50vw;
 }
 
@@ -439,7 +434,7 @@ font-size: 20px;
 #what-we-do article p,
 #who-we-are article p,
 #why-pact article p,
-#contact-us article p { 
+#contact-us-mobile article p { 
 max-width: 90vw;
 margin-left: 5vw;
 margin-right: 5vw;
