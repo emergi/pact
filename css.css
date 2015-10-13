@@ -545,11 +545,22 @@ font-size: 1.8rem;
 #what-is-pact article p,
 #what-we-do article p,
 #who-we-are article p,
-#why-pact article p,
 #contact-us-mobile article p { 
 max-width: 70vw;
 margin-left: 15vw;
 margin-right: 15vw;
+margin-bottom: 5rem;
+display: block;
+font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+font-size: 1.4rem;
+line-height: 2.2rem;
+}
+
+
+
+#why-pact article p{ 
+
+
 margin-bottom: 5rem;
 display: block;
 font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
@@ -648,7 +659,7 @@ text-align: left;
 and (max-device-width : 736px) { 
 
 html {
-font-size: 20px;
+font-size: 24px;
 }
 
 
@@ -669,8 +680,7 @@ margin-right: 0vw;
 #who-we-are article strong,
 #why-pact article strong {
 max-width: 90vw;
-margin-left: 5vw;
-margin-right: 5vw;
+
 }
 
 
