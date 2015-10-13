@@ -560,8 +560,7 @@ line-height: 2.2rem;
 
 #why-pact article p{ 
 
-
-margin-bottom: 5rem;
+/*border: 2px solid red;*/
 display: block;
 font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
 font-size: 1.4rem;
@@ -639,9 +638,6 @@ transform: translateZ(-1);
 text-align: right;
 }
 
-article#left-align-text {
-margin-top:0!important;
-}
 
 #left-align-text strong,
 #left-align-text p {
@@ -670,8 +666,18 @@ font-size: 24px;
 #why-pact article p,
 #contact-us-mobile article p { 
 max-width: 90vw;
-margin-left: 0vw;
-margin-right: 0vw;
+}
+
+
+#right-align-text {
+width: 80%;
+margin-left: 20%;
+}
+
+
+#left-align-text {
+width: 80%;
+margin-left: 0%;
 }
 
 
