@@ -132,7 +132,7 @@ height: 100vh;
 .home, #main {
 display: block;
 height: 100%;
-width: 19800px;
+width: 15800px;
 overflow-y:hidden;
 }
 
@@ -146,11 +146,13 @@ top:0;
 position: relative;
 width: 1600px;
 height: 100%;
+margin-left: -200px;
 /*background-color: blue;*/
 }
 
 
 .section picture {
+    margin-top: 50px;
 margin-left: -50px;
 position:absolute;
 z-index:0;
