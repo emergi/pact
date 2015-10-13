@@ -251,8 +251,12 @@ $(function() {
 		$("#keith-profile").fadeIn();
 	});
 
+	$("#contact-info").click(function() {
+		$("#contact-us").fadeIn();
+	});
+
 	$(".overlay").click(function() {
-		$("#paul-profile, #jerry-profile, #jan-profile, #keith-profile").fadeOut();
+		$("#paul-profile, #jerry-profile, #jan-profile, #keith-profile, #contact-us").fadeOut();
 	});
 
 });
