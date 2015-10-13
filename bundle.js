@@ -359,6 +359,7 @@ var jan = document.getElementById("mobile-profile-picture-jan");
 var keith = document.getElementById("mobile-profile-picture-keith");
 var jerry = document.getElementById("mobile-profile-picture-jerry");
 
+withinviewport.defaults.bottom = -50;
 withinviewport.defaults.sides = 'bottom';
 withinviewport(paul, jan, keith, jerry);
 
@@ -369,19 +370,19 @@ if ( withinviewport(logo) ) {
 }
 
 if ( withinviewport(paul) ) {
-	paul.style.width = ("40vw");
+	paul.style.width = ("30vw");
 }
 
 if ( withinviewport(jan) ) {
-	jan.style.width = ("40vw");
+	jan.style.width = ("30vw");
 }
 
 if ( withinviewport(keith) ) {
-	keith.style.width = ("40vw");
+	keith.style.width = ("30vw");
 }
 
 if ( withinviewport(jerry) ) {
-	jerry.style.width = ("40vw");
+	jerry.style.width = ("30vw");
 }
 }
 

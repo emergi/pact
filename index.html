@@ -587,8 +587,19 @@
 
 
 
-
 		<div class="section" data-stellar-offset-parent="true">
+
+
+
+
+				<section class="mask" data-stellar-ratio="1.2">
+						
+
+						<a href="mailto:info@pact.global"><button id="join-us"></button></a>
+				</section>
+
+
+
 
 
 				<picture class="bgimgs png" data-stellar-ratio="0.8">
@@ -723,14 +734,16 @@
 				alt="Paul Angeli"
 				srcset="
 				img/profiles/paul-profile-600.jpg 600w,
-				img/profiles/paul-profile-800.jpg 800w"/>
+				img/profiles/paul-profile-800.jpg 800w"
+				sizes="
+				(max-width: 1024px) 80vw"/>
 		
 				<strong>PAUL ANGELI</strong>
 		   
 
 			<p>I AM AN EXECUTIVE SEARCH AND LEADERSHIP SPECIALIST WITH NEARLY 20 YEARS EXPERIENCE IN DIGITAL MARKETING, ADVERTISING, MEDIA AND TECHNOLOGY.</p>
 
-			<button>
+			<div id="mobile-contact-buttons">
 				<a href="https://uk.linkedin.com/in/paulangeli" target="_blank">
 					<svg class="contact-icons-mobile">
 						<use class="icon" xlink:href="#linkedin"/>
@@ -746,8 +759,8 @@
 						<use class="icon" xlink:href="#phone"/>
 					</svg>
 				</a>
-			</button>
-
+			
+			</div>
 			</article>
 
 			<!--        JAN SULLIVAN           -->
@@ -771,7 +784,7 @@
 
 			<p class="paragraph">I FOCUS ON AND HAVE A PASSION FOR CREATIVE TALENT AND HAVE PLACED LEADERSHIP EXECUTIVES INTO THE BIGGEST AND BEST AGENCIES IN THE WORLD.</p>
 
-			<button>
+			<div id="mobile-contact-buttons">
 
 				<a href="https://uk.linkedin.com/in/jansullivan" target="_blank">
 					<svg class="contact-icons-mobile">
@@ -791,7 +804,7 @@
 					</svg>
 				</a>
 
-			</button>
+			</div>
 
 		</article>
 
@@ -814,7 +827,7 @@
 
 			<p class="paragraph">I HAVE SPENT THE LAST TWO DECADES BECOMING A DATA AND ANALYTICS EXPERT, HIRING LEADERS AND SPECIALISTS FOR LARGE ENTERPRISES, GLOBAL BRANDS AND MARKETING AGENCIES.</p>
 
-			<button>
+			<div id="mobile-contact-buttons">
 				<a href="https://uk.linkedin.com/in/keithmackenzie" target="_blank">
 					<svg class="contact-icons-mobile">
 						<use class="icon" xlink:href="#linkedin"/>
@@ -830,7 +843,7 @@
 						<use class="icon" xlink:href="#phone"/>
 					</svg>
 				</a>
-			</button>
+			</div>
 </article>
 
 			<!--        JERRY DANIELS           -->
@@ -847,12 +860,12 @@
 				sizes="
 				(max-width: 1024px) 80vw"/>
 					
-
+			<strong>JERRY DANIELS</strong>
 		   
 
 			<p>AS THE FORMER MANAGING DIRECTOR OF THE INTERNATIONAL HEAD-HUNTER, WHERE I RAN THE TECHNOLOGY, MEDIA AND TELCO DIVISIONS, I HAVE PERSONALLY FOCUSSED ON DISRUPTIVE DIGITAL TECHNOLOGY ACROSS ALL SECTORS.</p>
 
-			<button>
+		<div id="mobile-contact-buttons">
 				<a href="https://uk.linkedin.com/in/jerrydaniels" target="_blank">
 					<svg class="contact-icons-mobile">
 						<use class="icon" xlink:href="#linkedin"/>
@@ -868,8 +881,8 @@
 						<use class="icon" xlink:href="#phone"/>
 					</svg>
 				</a>
-			</button>
-
+	
+			</div>
 	 			</article>           
 			</section>
 
@@ -945,12 +958,23 @@
 			<header class="sticky">CONTACT US</header>
 			<article>
 
-				<svg id="contact-us-mobile-map">
+
+				<img id="contact-us-mobile-map" media="(min-width: 800px)"
+				srcset="
+				img/600/mobile-map-600.png 600,
+				img/800/map-800.png 800w"
+				/>
+
+
+
+
+
+<!-- 				<svg id="contact-us-mobile-map">
 					<use xlink:href="#map"/>
-				</svg>
+				</svg> -->
 				<!-- <img src="img/800/map-800.png" alt="Contact Pact map"/> -->
-				<p>8 PORTLAND MEWS,LONDON, W1F 8JH</p>
-				<button>
+				<p>8 PORTLAND MEWS,<br>LONDON, W1F 8JH</p>
+				<div id="mobile-contact-buttons">
 					<a href="mailto:hello@pact.global">
 						<svg class="contact-icons-mobile">
 							<use class="icon" xlink:href="#email"/>
@@ -962,7 +986,7 @@
 							<use class="icon" xlink:href="#phone"/>
 						</svg>
 					</a>
-				</button>
+				</div>
 			</article>
 		</section>
 
