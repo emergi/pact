@@ -146,13 +146,12 @@ top:0;
 position: relative;
 width: 1600px;
 height: 100%;
-margin-left: -200px;
 /*background-color: blue;*/
 }
 
 
 .section picture {
-    margin-top: 50px;
+margin-top: 50px;
 margin-left: -50px;
 position:absolute;
 z-index:0;
@@ -181,18 +180,18 @@ height: 20vw;
 
 #contact-info {
 color: #000;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
-margin-left: 26.5vw;
-width: 12vw;
-height: 3vw;
-margin-top: 5vw;
+margin-left: 25vw;
+width: 13vw;
+height: 4vw;
+margin-top: 9vw;
 }
 
 
 #join-us {
 color: #000;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
 margin-left: 28.5vw;
 width: 10vw;
