@@ -169,7 +169,7 @@ margin-left:13.5vw;
 
 .mask article button {
 color: #FFF;
-opacity: 0.5;
+opacity: 0;
 cursor: pointer;
 margin-left: 1.4vw;
 width: 14.2vw;
@@ -179,7 +179,7 @@ height: 20vw;
 
 #contact-info {
 color: #000;
-opacity: 0.5;
+opacity: 0;
 cursor: pointer;
 margin-left: 25vw;
 width: 13vw;
@@ -190,7 +190,7 @@ margin-top: 5vw;
 
 #join-us {
 color: #000;
-opacity: 0.5;
+opacity: 0;
 cursor: pointer;
 margin-left: 28.5vw;
 width: 10vw;
