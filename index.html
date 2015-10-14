@@ -25,28 +25,28 @@
 
 	<script>
 
-	var minWidth = 1024;
-		if ($(window).width() >= minWidth) {
+	// var minWidth = 1024;
+	// 	if ($(window).width() >= minWidth) {
 
-		function onReady(callback) {
-		    var intervalID = window.setInterval(checkReady, 4500);
+	// 	function onReady(callback) {
+	// 	    var intervalID = window.setInterval(checkReady, 4500);
 
-		    function checkReady() {
-		        if (document.getElementsByTagName('body')[0] !== undefined) {
-		            window.clearInterval(intervalID);
-		            callback.call(this);
-		        }
-		    }
-		}
-		function show(id, value) {
-		    document.getElementById(id).style.display = value ? 'block' : 'none';
-		}
-		onReady(function () {
-		    show('main', true);
-		    show('loader', false);
-		});
+	// 	    function checkReady() {
+	// 	        if (document.getElementsByTagName('body')[0] !== undefined) {
+	// 	            window.clearInterval(intervalID);
+	// 	            callback.call(this);
+	// 	        }
+	// 	    }
+	// 	}
+	// 	function show(id, value) {
+	// 	    document.getElementById(id).style.display = value ? 'block' : 'none';
+	// 	}
+	// 	onReady(function () {
+	// 	    show('main', true);
+	// 	    show('loader', false);
+	// 	});
 
-	};
+	// };
 
 </script>
 
@@ -321,9 +321,12 @@
 
 
 
-				<section id="paul-profile" class="overlay">
+			<section id="paul-profile" class="overlay">
 
-					<article>
+				<article>
+
+
+					<div id="profile-information">
 						<picture>
 							<source media="(min-width: 800px)"
 							alt="Paul Angeli"
@@ -333,9 +336,8 @@
 							sizes="
 							(max-width: 600px) 40vw,
 							(max-width: 800px) 40vw">
-							<img style="max-width:20vw;">
-						</picture>
-					
+							<img style="max-width:23vw;">
+
 						<div id="contact-information">
 							<a href="mailto:paul@pact.global">
 								<svg>
@@ -348,7 +350,7 @@
 								</svg>
 							</a>
 						</div>
-
+						</picture>
 
 						<div id="profile-bio">
 							<header>PAUL ANGELI</header>
@@ -359,6 +361,11 @@
 							<p>I was founder & CEO of leading specialist digital Executive Search firm, mediaCentrix which was acquired by a global search network.</p> 
 							<p>Today, I am responsible for global leadership hires for agency and management consultancies at C-suite level as well as discipline leads: strategy, creative and client services.</p>
 						</div>
+
+
+					</div>
+
+
 					</article>
 				</section>
 		
@@ -366,7 +373,7 @@
 
 				<section id="jerry-profile" class="overlay">
 					<article>
-					
+					<div id="profile-information">
 						<picture>
 							<source media="(min-width: 800px)"
 							alt="Jerry Daniels"
@@ -376,8 +383,7 @@
 							sizes="
 							(max-width: 600px) 40vw,
 							(max-width: 800px) 40vw">
-							<img style="width:20vw;">
-						</picture>
+							<img style="width:23vw;">
 
 						<div id="contact-information">
 							<a href="mailto:jerry@pact.global">
@@ -391,6 +397,9 @@
 								</svg>
 							</a>
 						</div>
+						</picture>
+
+
 					
 					
 						<div id="profile-bio">
@@ -398,6 +407,7 @@
 							<strong>AS THE FORMER MANAGING DIRECTOR OF THE INTERNATIONAL HEAD-HUNTER, WHERE I RAN THE TECHNOLOGY, MEDIA AND TELCO DIVISIONS, I HAVE PERSONALLY FOCUSSED ON DISRUPTIVE DIGITAL TECHNOLOGY ACROSS ALL SECTORS.</strong>
 							<p style="padding-top:3vw;">My expertise lies in finding outstanding leaders, from managing directors to chief technology officers.</p>
 							<p>I work with an exciting variety of start-ups and large enterprises advising on and delivering leadership talent with genuine skills and experience around emerging technology and innovation including; Cognitive Computing, Augmented Reality, Location Based Technology, 3D Printing, Virtual Reality and the Internet of Things.</p>
+						</div> 
 						</div> 
 					</article>
 				</section>
@@ -407,6 +417,7 @@
 
 				<section id="jan-profile" class="overlay">
 					<article>
+						<div id="profile-information">
 						<picture>
 							<source media="(min-width: 800px)"
 							alt="Jan Sullivan"
@@ -416,10 +427,9 @@
 							sizes="
 							(max-width: 600px) 40vw,
 							(max-width: 800px) 40vw">
-							<img style="width:20vw;">
-						</picture>
+							<img style="width:23vw;">
 
-						<div id="contact-information">
+							<div id="contact-information">
 					
 							<a href="mailto:paul@pact.global">
 								<svg>
@@ -433,6 +443,7 @@
 							</a>
 				
 						</div>
+						</picture>
 
 
 						<div id="profile-bio">
@@ -444,12 +455,17 @@
 						<p>I’ve worked both in-house at top tier creative businesses, and as an independent executive search consultant, sourcing exceptional leadership talent.</p>
 						<p>I focus on and have a passion for creative talent and have placed leadership executives into the biggest and best agencies in the world.</p>
 					</div>
+					</div>
 					</article>
 				</section>
 
 
+
+
+
 				<section id="keith-profile" class="overlay">
 					<article>
+						<div id="profile-information">
 						<picture>
 							<source media="(min-width: 800px)"
 							alt="Keith MacKenzie"
@@ -459,9 +475,9 @@
 							sizes="
 							(max-width: 600px) 40vw,
 							(max-width: 800px) 40vw">
-							<img style="width:20vw;">
-						</picture>
-					<div id="contact-information">
+							<img style="width:23vw;">
+
+						<div id="contact-information">
 
 						
 							<a href="mailto:keith@pact.global">
@@ -476,6 +492,10 @@
 								</svg>
 							</a>
 						</div>
+
+
+						</picture>
+
 					
 						<div id="profile-bio">
 					
@@ -487,6 +507,7 @@
 							<p>The landscape has changed and we are seeing a fundamental evolution in the importance of data as an enabler to better ideas, operational efficiency and real business innovation.</p>
 							<p>I am known for my ability to provide strategic business-driven talent solutions and unlock potential already within an organisation.</p>
 
+						</div>	
 						</div>	
 					</article>
 				</section>
