@@ -25,28 +25,28 @@
 
 	<script>
 
-	// var minWidth = 1024;
-	// 	if ($(window).width() >= minWidth) {
+	var minWidth = 1024;
+		if ($(window).width() >= minWidth) {
 
-	// 	function onReady(callback) {
-	// 	    var intervalID = window.setInterval(checkReady, 4500);
+		function onReady(callback) {
+		    var intervalID = window.setInterval(checkReady, 4500);
 
-	// 	    function checkReady() {
-	// 	        if (document.getElementsByTagName('body')[0] !== undefined) {
-	// 	            window.clearInterval(intervalID);
-	// 	            callback.call(this);
-	// 	        }
-	// 	    }
-	// 	}
-	// 	function show(id, value) {
-	// 	    document.getElementById(id).style.display = value ? 'block' : 'none';
-	// 	}
-	// 	onReady(function () {
-	// 	    show('main', true);
-	// 	    show('loader', false);
-	// 	});
+		    function checkReady() {
+		        if (document.getElementsByTagName('body')[0] !== undefined) {
+		            window.clearInterval(intervalID);
+		            callback.call(this);
+		        }
+		    }
+		}
+		function show(id, value) {
+		    document.getElementById(id).style.display = value ? 'block' : 'none';
+		}
+		onReady(function () {
+		    show('main', true);
+		    show('loader', false);
+		});
 
-	// };
+	};
 
 </script>
 
