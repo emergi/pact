@@ -132,7 +132,7 @@ height: 100vh;
 .home, #main {
 display: block;
 height: 100%;
-width: 15800px;
+width: 19800px;
 overflow-y:hidden;
 }
 
@@ -180,7 +180,7 @@ height: 20vw;
 
 #contact-info {
 color: #000;
-opacity: 0.5;
+opacity: 0;
 cursor: pointer;
 margin-left: 25vw;
 width: 13vw;
@@ -191,12 +191,12 @@ margin-top: 9vw;
 
 #join-us {
 color: #000;
-opacity: 0.5;
+opacity: 0;
 cursor: pointer;
 margin-left: 28.5vw;
 width: 10vw;
-height: 3vw;
-margin-top: 28.3vw;
+height: 4vw;
+margin-top: 32vw;
 }
 
 
