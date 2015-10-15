@@ -37,8 +37,8 @@ display: none;
 
 
 #loader-svg {
-    margin-top: 30vh;
-    margin-left: -16.2vw;
+    margin-top: 39vh;
+    margin-left: 6.5vw;
   stroke-dasharray: 0;
   stroke-dashoffset: 100;
   animation: dash 5s ease-out;
@@ -65,8 +65,8 @@ height: 100vh;
 }
 
 #loader svg {
-    width: 43vw;
-    height: 30vh;
+    width: 28vw;
+    height: 24.5vh;
 }
 
 
@@ -164,12 +164,12 @@ position:absolute;
 z-index:1;
 margin: 0 auto;
 margin-top:20.5vw;
-margin-left:13.5vw;
+margin-left:14.5vw;
 }
 
 .mask article button {
 color: #FFF;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
 margin-left: 1.4vw;
 width: 14.2vw;
@@ -179,7 +179,7 @@ height: 20vw;
 
 #contact-info {
 color: #000;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
 margin-left: 25vw;
 width: 13vw;
@@ -190,7 +190,7 @@ margin-top: 5vw;
 
 #join-us {
 color: #000;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
 margin-left: 28.5vw;
 width: 10vw;
@@ -318,8 +318,8 @@ cursor: pointer;
 #jan-profile article,
 #jerry-profile article,
 #keith-profile article {
-margin-top: 25vh;
-margin-left: 22vw;
+margin-top: 18vh;
+margin-left: 18vw;
 max-width: 60vw;
 
 /*border:10px solid blue;*/
@@ -334,7 +334,7 @@ width: 100vw;
 #jerry-profile img,
 #keith-profile img {
 /*left: 0;*/
-margin-left: 4vw;
+margin-left: 7vw;
 /*padding-right: 10vw;*/
 float: left;
 /*border:10px solid red;*/
@@ -343,7 +343,7 @@ margin-top:0;
 
 
 #profile-bio {
-width: 32vw;
+width: 29vw;
 float:right;
 }
 
@@ -359,7 +359,7 @@ height: 100%;
 
 #contact-information {
   margin-top:35vw;
-  margin-left: 4.5vw;
+  margin-left: 7.5vw;
 /*border:10px solid yellow;*/
 }
 
@@ -371,7 +371,7 @@ height: 100%;
 #jerry-profile article header,
 #keith-profile article header {
 margin-top: -1.6vh;
-margin-bottom: 1.5vw;
+margin-bottom: 1.2vw;
 font-family: ImpactWGL, Helvetica Neue, sans-serif;
 font-size: 3.8vw;
 letter-spacing: 0.1vw;
@@ -392,9 +392,9 @@ line-height: 1.55vw;
 #profile-bio p {
 margin-top: 0.5vw;
 font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
-font-size: 1.3vw;
+font-size: 1.1vw;
 line-height: 1.85vw;
-line-height: 2.45vh;
+line-height: 1.5vw;
 letter-spacing: 0.01vw;
 
 
