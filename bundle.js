@@ -221,7 +221,7 @@ jQuery.extend( jQuery.easing,
 
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
-var minWidth = 1024;
+var minWidth = 900;
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
@@ -281,7 +281,7 @@ var parallaxScroll = {
 			$main = $('#main');
 		
 		if (isHomePage) {
-			$main.width($main.width() + $(window).width() - 10000);
+			$main.width($main.width());
 		}
 		
 		$(window).stellar({

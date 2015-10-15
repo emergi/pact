@@ -50,7 +50,8 @@ body, html {
     width: 50%;
     height: 35%;
     margin: 0;
-    position: absolute;
+    /*position: absolute;*/
+
     top: 45vh;
     left: 49%;
     margin-right: -50%;
@@ -58,6 +59,7 @@ body, html {
     stroke-dasharray: 0;
     stroke-dashoffset: 100;
     animation: dash 5s ease-out;
+    /*border: 10px solid blue;*/
 }
 
 @keyframes dash {
@@ -67,10 +69,11 @@ body, html {
 }
 
 #loader {
-    position: relative background-color: white;
+    /*position: relative; */
+    background-color: white;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -webkit-animation-name: fadeOut;
@@ -80,6 +83,7 @@ body, html {
 #loader svg {
     position: absolute;
     display: block;
+    /*border: 10px solid red;*/
 }
 
 @-webkit-keyframes fadeOut {
@@ -129,7 +133,7 @@ body, html {
 .home, #main {
     display: block;
     height: 100%;
-    width: 19800px;
+    width: 10200px;
     overflow-y: hidden;
 }
 
@@ -147,7 +151,7 @@ body, html {
 }
 
 .section picture {
-    margin-left: -40px;
+    margin-left: -60px;
     position: absolute;
     z-index: 0;
     -webkit-user-drag: none;
@@ -333,7 +337,7 @@ body, html {
 
 /*          TABLETS        */
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     html {
         font-size: 28px;
         background-image: url(img/background-mobile.jpg);
@@ -519,7 +523,7 @@ body, html {
 
 /*          MOBILE     */
 
-@media (max-width: 736px) {
+@media (max-device-width: 736px) {
     html {
         font-size: 24px;
     }
@@ -552,7 +556,7 @@ body, html {
 
 /*          IPHONE 6        */
 
-@media (max-width: 667px) {
+@media (max-device-width: 667px) {
     html {
         font-size: 16px;
     }
