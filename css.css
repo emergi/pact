@@ -274,7 +274,7 @@ margin-left: 1.5vw;
     left: 0px;
     top: 0px;
     overflow: scroll;
-    cursor: url('img/closeCursor.svg') 22 45, default;
+    cursor: url('img/closeCursor.svg') 12 15, default;
 }
 
 #contact-us, #paul-profile, #jan-profile, #jerry-profile, #keith-profile {
