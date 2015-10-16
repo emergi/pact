@@ -1,4 +1,22 @@
+<?php 
+    header("Cache-Control: max-age=10, no-cache, no-store, must-revalidate");
+    header("Pragma: no-cache");
+    header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
+    header('Content-type: text/cache-manifest');
+?>
 CACHE MANIFEST
+# 2015-10-16:v1
+# Explicitly cached entries
 index.html
 css.css
-img/*
+bundle.js
+
+CACHE:
+img/background2.jpg
+img/1024/map-1024.png
+img/800/map-800.png
+fonts/2F56FC_0_0.woff
+fonts/2F56FC_1_0.woff
+fonts/2F56FC_2_0.woff
+http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
