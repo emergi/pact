@@ -163,31 +163,52 @@ body, html {
     z-index: 1;
     margin: 0 auto;
     margin-top: 20.5vw;
-    margin-left: 14.5vw;
+    margin-left: 14vw;
 }
 
 .mask article button {
     color: #FFF;
-    opacity: 0.5;
-    cursor: pointer;
-    margin-left: 1.4vw;
-    width: 14.2vw;
+    opacity: 0;
+    cursor: pointer;    
     height: 20vw;
 }
 
+.mask article button:nth-of-type(1n) {
+width: 13.8vw;
+}
+
+.mask article button:nth-of-type(2n) {
+width: 14.2vw;
+margin-left: 2vw;
+}
+
+.mask article button:nth-of-type(3n),
+.mask article button:nth-of-type(4n) {
+width: 14.2vw;
+margin-left: 1.5vw;
+}
+
+
+
+
+
+
+
 #contact-info {
     color: #000;
-    opacity: 0.5;
+    opacity: 0;
     cursor: pointer;
-    margin-left: 25vw;
-    width: 13vw;
+    margin-left: 24vw;
+    width: 14vw;
     height: 4vw;
     margin-top: 5vw;
 }
 
+
+
 #join-us {
     color: #000;
-    opacity: 0.5;
+    opacity: 0;
     cursor: pointer;
     margin-left: 28.5vw;
     width: 10vw;
