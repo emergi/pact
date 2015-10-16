@@ -31,11 +31,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html {
     font-size: 16px;
-    background-image: url(./img/background.jpg);
+    background-image: url(./img/background2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 body, html {
@@ -270,7 +270,7 @@ margin-left: 1.5vw;
     height: 100%;
     position: fixed;
     z-index: 999;
-    background-image: url(./img/background.jpg);
+    background-image: url(./img/background2.jpg);
     left: 0px;
     top: 0px;
     overflow: scroll;
@@ -326,6 +326,10 @@ margin-left: 1.5vw;
     margin-top: 35vw;
     margin-left: 7.5vw;
     /*border:10px solid yellow;*/
+}
+
+#contact-information a{
+text-decoration: none;
 }
 
 #contact-us article header, #paul-profile article header, #jan-profile article header, #jerry-profile article header, #keith-profile article header {
