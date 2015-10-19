@@ -221,7 +221,11 @@ jQuery.extend( jQuery.easing,
 
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
-var minWidth = 900;
+var minWidth = 1025;
+
+
+
+
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
@@ -229,6 +233,11 @@ $(function() {
 		event.preventDefault();
 	});
 });
+
+
+
+
+
 
 
 // WHO WE ARE 

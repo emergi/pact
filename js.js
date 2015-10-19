@@ -12,7 +12,7 @@ jQuery.extend( jQuery.easing,
 
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
-var minWidth = 1024;
+var minWidth = 1280;
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {

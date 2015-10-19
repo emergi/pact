@@ -360,12 +360,26 @@ text-decoration: none;
 /*          MOBILE        */
 
 
+
+
+
+
+
+
+
+
+
 /*          TABLETS        */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+
     html {
         font-size: 28px;
         background-image: url(img/background-mobile.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         -webkit-overflow-scrolling: touch;
         -webkit-transition: all 0.2s ease-in;
         -moz-transition: all 0.2s ease-in;
@@ -374,6 +388,226 @@ text-decoration: none;
 /*    body {
       background-color: yellow;
     }*/
+    .home, #main {
+
+        width: initial;
+        overflow-y: scroll;
+    }
+
+    #main {
+      display: none;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .home #main {
+        display: none;
+    }
+    .logo, .bgimgs {
+        display: none;
+    }
+    #loader, #loader-svg, #loader-svg-asset, .fadeOut, .fadeIn {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    article {
+              margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .sticky:before, .sticky:after {
+        content: '';
+        display: table;
+    }
+    #logo-mobile img {
+        padding-top: 10rem;
+        width: 50vw;
+        display: block;
+        margin: auto;
+        -webkit-transition: all 0.1s ease-in;
+        -moz-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in;
+        -webkit-transform: translateZ(-1);
+        transform: translateZ(-1);
+    }
+    #what-is-pact {
+        margin-top: 25rem;
+    }
+    #what-is-pact header {
+        background-color: rgba(229,229,229,0.95);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        padding-top: 0.8rem;
+        text-align: center;
+        font-family: ImpactWGL, Helvetica Neue, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+    }
+    #what-is-pact article {
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    #what-we-do, #who-we-are, #why-pact {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    #what-we-do header, #who-we-are header, #why-pact header, #contact-us-mobile header {
+        background-color: rgba(229,229,229,0.95);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        width:100vw;
+        padding-top: 0.2rem;
+        text-align: center;
+        font-family: ImpactWGL, Helvetica Neue, sans-serif;
+        font-size: 2rem;
+    }
+    #who-we-are article {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    #why-pact article {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+
+    }
+
+      #what-we-do article {
+      padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+
+    #contact-us-mobile article {
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+        text-align: center;
+    }
+    #contact-us-mobile {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    #what-is-pact article strong, #what-we-do article strong, #who-we-are article strong {
+        margin-bottom: 1rem;
+        display: block;
+        font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    #why-pact article strong {
+        margin-bottom: 1rem;
+        display: block;
+        font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+        font-size: 1.1rem;
+
+    }
+
+
+
+    #what-is-pact article p, #what-we-do article p, #who-we-are article p, #contact-us-mobile article p {
+        margin-bottom: 2.5rem;
+        display: block;
+        font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+        font-size: 1.0rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    #why-pact article p {
+        /*border: 2px solid red;*/
+        display: block;
+        font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+        font-size: 1.0rem;
+        line-height: 1.8rem;
+    }
+    #mobile-contact-buttons a {
+        margin-top: -1.2rem;
+        background: none;
+        border: none;
+        text-decoration: none;
+    }
+    #who-we-are article a,
+    #contact-us article a {
+        
+    }
+    #who-we-are article a, #who-we-are article a:visited {
+        text-decoration: none;
+        background: none;
+        border: none;
+    }
+    #who-we-are article a:hover, #who-we-are article a:active {
+        fill: gray;
+    }
+    #who-we-are article strong {
+        padding-top: 0.5rem;
+    }
+    .contact-icons-mobile {
+        padding-right: 2vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    #contact-us-mobile-map {
+        width: 100%;
+    }
+    #contact-us-mobile img {
+        margin-bottom: 8rem;
+    }
+    #who-we-are img {
+        width: 50vw;
+        display: block;
+        margin: auto;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        -webkit-transform: translateZ(-1);
+        transform: translateZ(-1);
+    }
+    #right-align-text strong, #right-align-text p {
+        text-align: right;
+    }
+    #left-align-text strong, #left-align-text p {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width: 768px) {
+
+
+   html {
+        font-size: 28px;
+        background-image: url(img/background-mobile.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
     .home, #main {
         width: initial;
         overflow-y: scroll;
@@ -491,19 +725,20 @@ text-decoration: none;
         text-align: center;
     }
     #why-pact article p {
-        /*border: 2px solid red;*/
         display: block;
         font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
         font-size: 1.0rem;
         line-height: 1.8rem;
     }
-    #mobile-contact-buttons {
+    #mobile-contact-buttons a {
         margin-top: -1.2rem;
         background: none;
         border: none;
+        text-decoration: none;
     }
-    #who-we-are article a {
-        /*border: 10px solid red;*/
+    #who-we-are article a,
+    #contact-us article a {
+        
     }
     #who-we-are article a, #who-we-are article a:visited {
         text-decoration: none;
@@ -544,6 +779,42 @@ text-decoration: none;
         text-align: left;
     }
 }
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*          MOBILE     */
