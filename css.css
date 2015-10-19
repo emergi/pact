@@ -385,9 +385,7 @@ text-decoration: none;
         -moz-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in;
     }
-/*    body {
-      background-color: yellow;
-    }*/
+
     .home, #main {
 
         width: initial;
