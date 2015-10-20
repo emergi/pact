@@ -135,6 +135,7 @@ body, html {
     height: 100%;
     width: 10200px;
     overflow-y: hidden;
+    overflow-x:hidden;
 }
 
 .home .section {
