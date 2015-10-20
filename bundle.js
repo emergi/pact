@@ -222,17 +222,32 @@ jQuery.extend( jQuery.easing,
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
 var minWidth = 1025;
-
-
+var el = $("html, body")
+var scroll = el.scrollLeft();
+var round = lastScroll < scroll ? Math.ceil : Math.floor;
+var lastScroll = round(scroll/16) * 160;
 
 
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 2.5);
+		this.scrollLeft -= round(delta * 1.5);
 		event.preventDefault();
 	});
 });
+
+
+
+
+
+// var lastScroll = 0;
+// $('html, body').scroll(function(e){
+//     ,
+//         
+        
+//     
+//     el.scrollLeft(lastScroll);
+// });
 
 
 
@@ -330,10 +345,10 @@ var parallaxScroll = {
 				} else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40
-					}, 400, 'easeInOutSine', function() {
+					}, 350, 'easeInOutSine', function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1200));
-						}, 400);
+						}, 350);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
