@@ -230,7 +230,7 @@ var userPlatform = platform.os.family;
 var scrollRatio = '';
 
 if (userPlatform == 'Linux' ) { //'Windows' 30
-    scrollRatio = 50;
+    scrollRatio = 450;
 
 } else {
     scrollRatio = 1.5;
