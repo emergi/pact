@@ -229,8 +229,8 @@ jQuery.extend( jQuery.easing,
 var userPlatform = platform.os.family;
 var scrollRatio = '';
 
-if (userPlatform == 'Windows' ) {
-    scrollRatio = 30;
+if (userPlatform == 'Linux' ) { //'Windows' 30
+    scrollRatio = 50;
 
 } else {
     scrollRatio = 1.5;
@@ -348,10 +348,10 @@ var parallaxScroll = {
 				} else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40
-					}, 350, 'easeInOutSine', function() {
+					}, 1500, 'easeInOutSine', function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 100));
-						}, 350);
+						}, 1500);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
