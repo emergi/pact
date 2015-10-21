@@ -230,10 +230,10 @@ var userPlatform = platform.os.family;
 var scrollRatio = '';
 
 if (userPlatform == 'Linux' ) { //'Windows' 30
-    scrollRatio = 450;
+    scrollRatio = 50;
 
 } else {
-    scrollRatio = 50;
+    scrollRatio = 1.5;
 }
 
 
@@ -348,10 +348,10 @@ var parallaxScroll = {
 				} else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40
-					}, 1500, 'easeInOutSine', function() {
+					}, 2500, 'easeInOutSine', function() {
 						setTimeout(function(){
-							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 100));
-						}, 1500);
+							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 500));
+						}, 2500);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
