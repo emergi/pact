@@ -228,8 +228,10 @@ jQuery.extend( jQuery.easing,
 
 var userPlatform = platform.os.family;
 var scrollRatio = '';
+var OSName="Unknown OS";
+if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
 
-if (userPlatform == 'Windows' ) { //'Windows' 30
+if (OSName == 'Windows' ) { //'Windows' 30 userPlatform
     scrollRatio = 50;
 
 } else {
