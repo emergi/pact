@@ -219,6 +219,24 @@ jQuery.extend( jQuery.easing,
 });
 
 
+
+
+
+
+
+
+
+var userPlatform = platform.os.family;
+var scrollRatio = '';
+
+if (userPlatform == 'Windows' ) {
+    scrollRatio = 30;
+
+} else {
+    scrollRatio = 1.5;
+}
+
+
 // UNDER 768PX SWITCHES TO MOBILE SITE
 
 var minWidth = 1025;
@@ -231,25 +249,10 @@ var lastScroll = round(scroll/16) * 160;
 if ($(window).width() >= minWidth) {
 $(function() {
 	$("html, body").mousewheel(function(event, delta) {
-		this.scrollLeft -= round(delta * 1.5);
+		this.scrollLeft -= round(delta * scrollRatio);
 		event.preventDefault();
 	});
 });
-
-
-
-
-
-// var lastScroll = 0;
-// $('html, body').scroll(function(e){
-//     ,
-//         
-        
-//     
-//     el.scrollLeft(lastScroll);
-// });
-
-
 
 
 
@@ -347,7 +350,7 @@ var parallaxScroll = {
 						scrollLeft: $activeSection.offset().left - 40
 					}, 350, 'easeInOutSine', function() {
 						setTimeout(function(){
-							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1400));
+							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 100));
 						}, 350);
 					});
 				}	
@@ -356,7 +359,7 @@ var parallaxScroll = {
 				});
 			};
 		if (window.location.href.indexOf('#show-offset-parents-default') === -1) {
-			$(window).bind('scroll.stellarsite', debounce(handleScroll, 1250));
+			$(window).bind('scroll.stellarsite', debounce(handleScroll, 1400));
 		}
 	}
 };
