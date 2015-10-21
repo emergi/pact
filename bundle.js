@@ -224,7 +224,7 @@ jQuery.extend( jQuery.easing,
 
 
 
-
+//  CHECK WHAT PLATFORM AND ADJUST SCROLL RATIO
 
 var userPlatform = platform.os.family;
 var scrollRatio = '';
@@ -237,7 +237,7 @@ if (userPlatform == 'Windows' ) {
 }
 
 
-// UNDER 768PX SWITCHES TO MOBILE SITE
+// UNDER 1025PX SWITCHES TO MOBILE SITE
 
 var minWidth = 1025;
 var el = $("html, body")
