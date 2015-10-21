@@ -233,7 +233,7 @@ if (userPlatform == 'Linux' ) { //'Windows' 30
     scrollRatio = 450;
 
 } else {
-    scrollRatio = 1.5;
+    scrollRatio = 50;
 }
 
 
