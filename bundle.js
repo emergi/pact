@@ -229,8 +229,8 @@ jQuery.extend( jQuery.easing,
 var userPlatform = platform.os.family;
 var scrollRatio = '';
 
-if (userPlatform == 'Linux' ) { //'Windows' 30
-    scrollRatio = 1.5;
+if (userPlatform == 'Windows' ) { //'Windows' 30
+    scrollRatio = 50;
 
 } else {
     scrollRatio = 1.5;
