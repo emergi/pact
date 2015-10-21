@@ -347,7 +347,7 @@ var parallaxScroll = {
 						scrollLeft: $activeSection.offset().left - 40
 					}, 350, 'easeInOutSine', function() {
 						setTimeout(function(){
-							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1200));
+							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1400));
 						}, 350);
 					});
 				}	
