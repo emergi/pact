@@ -230,9 +230,14 @@ var userPlatform = platform.os.family;
 var scrollRatio = '';
 var OSName="Unknown OS";
 if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+console.log('Your OS: '+OSName)
 
 if (OSName == "Windows" ) { //'Windows' 30 userPlatform
     scrollRatio = 70;
+    
 
 } else {
     scrollRatio = 1.5;
