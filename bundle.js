@@ -232,7 +232,7 @@ var OSName="Unknown OS";
 if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
 
 if (OSName == "Windows" ) { //'Windows' 30 userPlatform
-    scrollRatio = 100;
+    scrollRatio = 70;
 
 } else {
     scrollRatio = 1.5;
