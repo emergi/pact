@@ -139,14 +139,14 @@ if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 
 
 if (OSName == "Windows" ) { //'Windows' 30 userPlatform
-    scrollTimeout = 5000; 
+    scrollTimeout = 600; 
     deltaWebkit = 0.10;
     deltaFirefox = -0.18; 
     scrollTime = 0.5;
     scrollDistance = 80;
 
 } else {
-    scrollTimeout = 5000; 
+    scrollTimeout = 600; 
     deltaWebkit = 0.05;
     deltaFirefox = -0.58;
     scrollTime = 0.5;
@@ -250,10 +250,10 @@ var parallaxScroll = {
                 else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40 // offset
-					}, 350, function() {
+					}, 2500, function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, scrollTimeout));
-						}, 350);
+						}, 2500);
 					});
 				}	
 				$(window).bind('mousewheel', function(){

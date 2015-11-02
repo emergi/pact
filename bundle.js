@@ -211,14 +211,14 @@ if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 
 
 if (OSName == "Windows" ) { 
-    scrollTimeout = 5000; //600
+    scrollTimeout = 600; //600
     deltaWebkit = 0.10;
     deltaFirefox = -0.18; 
     scrollTime = 0.5;
     scrollDistance = 80;
 
 } else {
-    scrollTimeout = 5000; 
+    scrollTimeout = 600; 
     deltaWebkit = 0.05;
     deltaFirefox = -0.58;
     scrollTime = 0.5;
@@ -358,7 +358,7 @@ var parallaxScroll = {
                 else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40 // offset
-					}, 2500, 'easeInOutSine', function() {
+					}, 2500, function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, scrollTimeout));
 						}, 2500);
