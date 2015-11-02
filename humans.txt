@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Samuel Weckström> -- <Developer> -- <https://github.com/samuelweckstrom>
+    <Ina Bagociute> -- <Designer> -- <http://www.hackmasters.co.uk>
+    <Patrik Konopacki> -- <Concept / Art direction> -- <http://www.konopackipatryk.com/>
+
+# THANKS
+
+    <HACKMASTERS>
+    <Pact>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, SVG
+    Apache Server Configs, jQuery, Stellar.js, Picturefill.js, Stickyfill.js, Modernizr
