@@ -253,7 +253,7 @@ var parallaxScroll = {
 					}, 350, function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, scrollTimeout));
-						}, 2500);
+						}, 350);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
