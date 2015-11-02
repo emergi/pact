@@ -250,7 +250,7 @@ var parallaxScroll = {
                 else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40 // offset
-					}, 2500, function() {
+					}, 350, function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, scrollTimeout));
 						}, 2500);
