@@ -112,10 +112,10 @@ var parallaxScroll = {
 				} else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40
-					}, 600, 'easeInOutSine', function() {
+					}, 2500, 'easeInOutSine', function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 1400));
-						}, 2500);
+						}, 600);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
