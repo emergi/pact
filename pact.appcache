@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# 2015-10-16:v1
+index.html
+css.css
+desktop.js
+mobile.js
+img/logoMobile.svg
+http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js

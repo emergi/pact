@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'ImpactWGL';
+    src: url('fonts/2F56FC_0_0.eot');
+    src: url('fonts/2F56FC_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/2F56FC_0_0.woff2') format('woff2'), url('fonts/2F56FC_0_0.woff') format('woff'), url('fonts/2F56FC_0_0.ttf') format('truetype'), url('fonts/2F56FC_0_0.svg#wf') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Heavy';
+    src: url('fonts/2F56FC_1_0.eot');
+    src: url('fonts/2F56FC_1_0.eot?#iefix') format('embedded-opentype'), url('fonts/2F56FC_1_0.woff2') format('woff2'), url('fonts/2F56FC_1_0.woff') format('woff'), url('fonts/2F56FC_1_0.ttf') format('truetype'), url('fonts/2F56FC_1_0.svg#wf') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url('fonts/2F56FC_2_0.eot');
+    src: url('fonts/2F56FC_2_0.eot?#iefix') format('embedded-opentype'), url('fonts/2F56FC_2_0.woff2') format('woff2'), url('fonts/2F56FC_2_0.woff') format('woff'), url('fonts/2F56FC_2_0.ttf') format('truetype'), url('fonts/2F56FC_2_0.svg#wf') format('svg');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+html {
+    font-size: 16px;
+    background-image: url(./img/background2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+#mobile, #main {
+    display: none;
+}
+
+#loader-svg {
+    width: 50%;
+    height: 35%;
+    margin: 0;
+    top: 45vh;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    stroke-dasharray: 0;
+    stroke-dashoffset: 100;
+    animation: dash 5s ease-out;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#loader {
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+#loader svg {
+    position: absolute;
+    display: block;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    animation-delay: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.home, #main {
+
+    display: block;
+    height: 100%;
+    width: 11200px;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+.home .section {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.section {
+    top: 0;
+    position: relative;
+    width: 1600px;
+    height: 100%;
+}
+
+.section picture {
+    position: absolute;
+    z-index: 0;
+    -webkit-user-drag: none;
+    vertical-align: center;
+}
+
+.mask {
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 20.5vw;
+    margin-left: 14vw;
+}
+
+.mask article button {
+    color: #FFF;
+    opacity: 0;
+    cursor: pointer;    
+    height: 20vw;
+}
+
+.mask article button:nth-of-type(1n) {
+    width: 13.8vw;
+}
+
+.mask article button:nth-of-type(2n) {
+    width: 14.2vw;
+    margin-left: 2vw;
+}
+
+.mask article button:nth-of-type(3n),
+.mask article button:nth-of-type(4n) {
+    width: 14.2vw;
+    margin-left: 1.5vw;
+}
+
+#contact-info {
+    color: #000;
+    opacity: 0;
+    cursor: pointer;
+    margin-left: 24vw;
+    width: 14vw;
+    height: 4vw;
+    margin-top: 5vw;
+}
+
+#join-us {
+    color: #000;
+    opacity: 0;
+    cursor: pointer;
+    margin-left: 28.5vw;
+    width: 10vw;
+    height: 4vw;
+    margin-top: 28vw;
+}
+
+#contact-us {
+    overflow: hidden;
+}
+
+#contact-us header {
+    margin-left: 40vw;
+    padding-bottom: 3vw;
+}
+
+#contact-us article {
+    float: left;
+    margin-top: 12.8vw;
+}
+
+#contact-us picture {
+    float: left;
+    left: 0;
+    margin-left: 18vw;
+    padding-right: 10vw;
+}
+
+#contact-details {
+    position: absolute;
+    z-index: 99999;
+    margin-left: 64vw;
+    cursor: auto;
+}
+
+#contact-details strong {
+    display: block;
+    margin-top: 2rem;
+}
+
+#contact-details a, #contact-details a:visited {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+#contact-us a, #contact-us p {
+    margin-top: 0.5vw;
+    font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.85vw;
+    line-height: 2.25vh;
+    letter-spacing: 0.01vw;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-image: url(./img/background2.jpg);
+    left: 0px;
+    top: 0px;
+    overflow: scroll;
+    cursor: url('img/closeCursor.svg') 12 15, default;
+}
+
+#paul-profile a svg, #jan-profile a svg, #jerry-profile a svg, #keith-profile a svg {
+    margin-left: -1.5vw;
+    width: 3vw;
+    height: 3vw;
+    margin-right: 2vw;
+}
+
+#paul-profile a svg:hover, #jan-profile a svg:hover, #jerry-profile a svg:hover, #keith-profile a svg:hover {
+    fill: gray;
+    cursor: pointer;
+}
+
+#paul-profile article, #jan-profile article, #jerry-profile article, #keith-profile article {
+    margin-top: 18vh;
+    margin-left: 18vw;
+    max-width: 60vw;
+    height: 50vh;
+    width: 100vw;
+}
+
+#paul-profile img, #jan-profile img, #jerry-profile img, #keith-profile img {
+    margin-left: 6vw;
+    float: left;
+    margin-top: 0;
+}
+
+#profile-bio {
+    margin-top: -0.25vw;
+    width: 29vw;
+    float: right;
+}
+
+#profile-information {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#contact-information {
+    margin-top: 34vw;
+    margin-left: 7.5vw;
+}
+
+#contact-information a{
+    text-decoration: none;
+}
+
+#contact-us article header, #paul-profile article header, #jan-profile article header, #jerry-profile article header, #keith-profile article header {
+    margin-top: -1.6vh;
+    margin-bottom: 1.2vw;
+    font-family: ImpactWGL, Helvetica Neue, sans-serif;
+    font-size: 3.8vw;
+    letter-spacing: 0.1vw;
+}
+
+#contact-us strong, #profile-bio strong {
+    font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+    font-size: 1.3vw;
+    letter-spacing: 0.01vw;
+    line-height: 1.55vw;
+}
+
+#profile-bio p {
+    margin-top: 0.5vw;
+    font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.85vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.01vw;
+}
+
+
+
+
+/*          MOBILE        */
+
+
+/*          TABLETS        */
+
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 28px;
+        background-image: url(img/background-mobile.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+    .home, #main {
+
+        width: initial;
+        overflow-y: scroll;
+    }
+
+    #main {
+      display: none;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .home #main {
+        display: none;
+    }
+
+    .logo, .bgimgs {
+        display: none;
+    }
+
+    #loader, #loader-svg, #loader-svg-asset, .fadeOut, .fadeIn {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    article {
+              margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .sticky:before, .sticky:after {
+        content: '';
+        display: table;
+    }
+
+    #logo-mobile img {
+        padding-top: 10rem;
+        width: 50vw;
+        display: block;
+        margin: auto;
+        -webkit-transition: all 0.1s ease-in;
+        -moz-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in;
+        -webkit-transform: translateZ(-1);
+        transform: translateZ(-1);
+    }
+
+    #what-is-pact {
+        margin-top: 25rem;
+    }
+
+    #what-is-pact header {
+        background-color: rgba(229,229,229,0.95);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        padding-top: 0.8rem;
+        text-align: center;
+        font-family: ImpactWGL, Helvetica Neue, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #what-is-pact article {
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    #what-we-do, #who-we-are, #why-pact {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    #what-we-do header, #who-we-are header, #why-pact header, #contact-us-mobile header {
+        background-color: rgba(229,229,229,0.95);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        width:100vw;
+        padding-top: 0.2rem;
+        text-align: center;
+        font-family: ImpactWGL, Helvetica Neue, sans-serif;
+        font-size: 2rem;
+    }
+
+    #who-we-are article {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    #why-pact article {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+
+    }
+
+      #what-we-do article {
+      padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #contact-us-mobile article {
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+        text-align: center;
+    }
+
+    #contact-us-mobile {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    #what-is-pact article strong, #what-we-do article strong, #who-we-are article strong {
+        margin-bottom: 1rem;
+        display: block;
+        font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    #why-pact article strong {
+        margin-bottom: 1rem;
+        display: block;
+        font-family: AvenirLTStd-Heavy, Helvetica Neue, sans-serif;
+        font-size: 1.1rem;
+
+    }
+
+    #what-is-pact article p, #what-we-do article p, #who-we-are article p, #contact-us-mobile article p {
+        margin-bottom: 2.5rem;
+        display: block;
+        font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+        font-size: 1.0rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+
+    #why-pact article p {
+        /*border: 2px solid red;*/
+        display: block;
+        font-family: AvenirLTStd-Book, Helvetica Neue, sans-serif;
+        font-size: 1.0rem;
+        line-height: 1.8rem;
+    }
+    #mobile-contact-buttons a {
+        margin-top: -1.2rem;
+        background: none;
+        border: none;
+        text-decoration: none;
+    }
+
+    #who-we-are article a, #who-we-are article a:visited {
+        text-decoration: none;
+        background: none;
+        border: none;
+    }
+
+    #who-we-are article a:hover, #who-we-are article a:active {
+        fill: gray;
+    }
+
+    #who-we-are article strong {
+        padding-top: 0.5rem;
+    }
+
+    .contact-icons-mobile {
+        padding-right: 2vw;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #contact-us-mobile-map {
+        width: 100%;
+    }
+
+    #contact-us-mobile img {
+        margin-bottom: 8rem;
+    }
+
+    #who-we-are img {
+        width: 50vw;
+        display: block;
+        margin: auto;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        -webkit-transform: translateZ(-1);
+        transform: translateZ(-1);
+    }
+
+    #right-align-text strong, #right-align-text p {
+        text-align: right;
+    }
+
+    #left-align-text strong, #left-align-text p {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+/*          MOBILE     */
+
+@media (max-device-width: 736px) {
+    html {
+        font-size: 24px;
+    }
+
+    #what-is-pact article p, #what-we-do article p, #who-we-are article p, #why-pact article p, #contact-us-mobile article p {
+        max-width: 90vw;
+    }
+    #right-align-text {
+        width: 80%;
+        margin-left: 20%;
+    }
+    #left-align-text {
+        width: 80%;
+        margin-left: 0%;
+    }
+    #what-is-pact article strong, #what-we-do article strong, #who-we-are article strong, #why-pact article strong {
+        max-width: 90vw;
+    }
+    #who-we-are article img {
+        width: 80vw;
+        padding-bottom: 11.5rem;
+    }
+    #who-we-are article strong {
+        margin-top: -11.5rem;
+    }
+}
+
+
+/*          IPHONE 6        */
+
+@media (max-device-width: 667px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 567px) {
+    html {
+        font-size: 14px;
+    }
+}
