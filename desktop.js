@@ -123,10 +123,12 @@ jQuery.extend( jQuery.easing,
 
 //  CHECK WHAT PLATFORM AND ADJUST SCROLL RATIO
 
-var scrollTimeout,          // Timeout for parallax alignment
-    scrollTime,             // Duration of scroll event
-    scrollDistance,         // How far to scroll per event
-    deltaWebkit,            // Lower = faster scroll acceleration
+var scrollTimeout,          //  Timeout for parallax alignment
+    scrollTime,             //  Duration of scroll event
+    scrollAlign,            //  How fast the alignment
+    scrollDistance,         //  How far to scroll per event
+    idleArea,               //  Area where no alignment occurs
+    deltaWebkit,            //  Lower = faster scroll acceleration
     deltaFirefox,
 
     OSName="Unknown OS";
@@ -144,6 +146,8 @@ if (OSName == "Windows" ) { //'Windows' 30 userPlatform
     deltaFirefox = -0.18; 
     scrollTime = 0.5;
     scrollDistance = 80;
+    scrollAlign = 350;
+    idleArea = 350;
 
 } else {
     scrollTimeout = 600; 
@@ -151,6 +155,8 @@ if (OSName == "Windows" ) { //'Windows' 30 userPlatform
     deltaFirefox = -0.58;
     scrollTime = 0.5;
     scrollDistance = 80;
+    scrollAlign = 350;
+    idleArea = 350;
 }
 
 
@@ -250,10 +256,10 @@ var parallaxScroll = {
                 else {
 					$('html,body').animate({
 						scrollLeft: $activeSection.offset().left - 40 // offset
-					}, 350, function() {
+					}, scrollAlign, function() {
 						setTimeout(function(){
 							$(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, scrollTimeout));
-						}, 350);
+						}, idleArea);
 					});
 				}	
 				$(window).bind('mousewheel', function(){
