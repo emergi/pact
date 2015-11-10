@@ -146,7 +146,7 @@ if (OSName == "Windows" ) { //'Windows' 30 userPlatform
     deltaFirefox = -0.18; 
     scrollTime = 0.5;
     scrollDistance = 80;
-    scrollAlign = 2500;
+    scrollAlign = 2000;
     idleArea = 350;
 
 } else {
@@ -155,7 +155,7 @@ if (OSName == "Windows" ) { //'Windows' 30 userPlatform
     deltaFirefox = -0.58;
     scrollTime = 0.5;
     scrollDistance = 80;
-    scrollAlign = 2500;
+    scrollAlign = 2000;
     idleArea = 350;
 }
 
